@@ -56,10 +56,10 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # ==========================================
-# 📂 2. DATABASE & FILE PARSING INTERFACES
+# 📂 2. DATA LOADERS & DATA ARCHITECTURE
 # ==========================================
 def load_lifestyle_manifest():
-    """Dynamically parses the lifestyle configuration text file."""
+    """Parses the lifestyle configuration file."""
     tasks = []
     if os.path.exists("lifestyle_tasks.txt"):
         with open("lifestyle_tasks.txt", "r") as f:
@@ -70,7 +70,7 @@ def load_lifestyle_manifest():
                         name, tag = cleaned.split("|")
                         tasks.append({"name": name.strip(), "tag": tag.strip()})
     else:
-        # Core hardcoded manifest if text file connection is broken
+        # Fallback manifest if file is missing during initial init
         tasks = [
             {"name": "Morning Chores & Breakfast", "tag": "morning_chores"},
             {"name": "Medical Telemetry Intake", "tag": "medications"},
@@ -84,7 +84,7 @@ def load_lifestyle_manifest():
     return tasks
 
 def load_user_profile():
-    """Retrieves long-term telemetry metrics from local tracking state."""
+    """Retrieves long-term student metrics."""
     if os.path.exists("user_stats.json"):
         with open("user_stats.json", "r") as f:
             return json.load(f)
@@ -92,17 +92,44 @@ def load_user_profile():
         "current_xp": 0,
         "streak_days": 0,
         "league": "Troposphere Initiate",
-        "completed_questions_count": 0
+        "completed_questions": []
     }
 
 def save_user_profile(profile_data):
-    """Commits analytical tracking changes back to the database array."""
+    """Commits metric tracking back to the profile json."""
     with open("user_stats.json", "w") as f:
         json.dump(profile_data, f, indent=2)
 
-# Initialize States
+def load_weekly_payload(week_num=1):
+    """Loads the core curriculum JSON database files dynamically."""
+    filename = f"week_{week_num:02d}.json"
+    if os.path.exists(filename):
+        with open(filename, "r") as f:
+            return json.load(f)
+    
+    # Static fallback template for visualization testing prior to full payload upload
+    return {
+        "week_number": week_num,
+        "knowledge_capsules": {
+            "physics": {"topic": "Thermal Systems & Vacuum Insulation", "summary": "How satellites process heat via radiation loops without molecules...", "key_points": ["No conduction/convection in space vacuum", "$E \\propto T^4$"], "resources": [{"title": "PhET Thermodynamic Simulation", "url": "https://phet.colorado.edu"}]},
+            "mathematics": {"topic": "Negative Integer Number Fields", "summary": "Operational laws governing complex sign inversion vectors...", "key_points": ["$(-a) \\times (-b) = ab$", "Coordinate axis tracking"], "resources": [{"title": "Khan Academy Algebra Track", "url": "https://www.khanacademy.org"}]},
+            "chemistry": {"topic": "Acids, Bases, and Neutralization", "summary": "How indicators trace molecular salt-water conversions...", "key_points": ["Acids yield $H^+$ ions", "Acid + Base = Salt + Water"], "resources": [{"title": "PhET Indicators Lab", "url": "https://phet.colorado.edu"}]},
+            "biology": {"topic": "Cellular Energy Pathways", "summary": "Breaking down aerobic vs. anaerobic threshold respiration...", "key_points": ["Aerobic loops use $O_2$", "Anaerobic muscle breakdown yields Lactic Acid"], "resources": [{"title": "CrashCourse Science Pathways", "url": "https://www.youtube.com"}]},
+            "logical_reasoning": {"topic": "Cipher Transpositions", "summary": "Deciphering cyclic alphanumeric matrix shifts...", "key_points": ["Arithmetic position shifts", "Matrix rotation algorithms"], "resources": [{"title": "Logic Processing Archive", "url": "https://www.khanacademy.org"}]}
+        },
+        "weekday_pool": [
+            {"id": "W01_P01", "subject": "Physics", "tier": "HOTS", "question": "A rover hull surface temperature doubles from 300K to 600K. By what multiplier does its net emitted thermal radiation increase?", "options": ["Factor of 2", "Factor of 4", "Factor of 16", "Factor of 32"], "correct": "Factor of 16", "hint": "Radiation parameters scale to the fourth power: $E \\propto T^4$."},
+            {"id": "W01_P02", "subject": "Mathematics", "tier": "HOTS", "question": "Evaluate the summation sequence: $f(n) = (-1)^n \\times n$. Compute total for $f(1) + f(2) + \\dots + f(100)$.", "options": ["-50", "0", "50", "100"], "correct": "50", "hint": "Group terms into consecutive arithmetic pairs."}
+        ],
+        "sunday_exam": [
+            {"id": "W01_EXAM_01", "subject": "Physics", "question": "Under timed settings, deduce the net rate multiplier of a blackbody system if internal heat modules double absolute temperature parameters ($2T$).", "options": ["2x", "4x", "8x", "16x"], "correct": "16x"}
+        ]
+    }
+
+# Initialize Running Memory Structures
 tasks_manifest = load_lifestyle_manifest()
 user_profile = load_user_profile()
+payload = load_weekly_payload(1)
 
 if "lifestyle_approved" not in st.session_state:
     st.session_state["lifestyle_approved"] = False
@@ -110,13 +137,13 @@ if "exam_active" not in st.session_state:
     st.session_state["exam_active"] = False
 
 # ==========================================
-# 🛰️ 3. GLOBAL TELEMETRY HEADS-UP DISPLAY (HUD)
+# 🛰️ 3. CENTRAL TELEMETRY STATUS HUD
 # ==========================================
 st.title("🌌 DEEP SPACE TRAINING COCKPIT")
-st.caption("TACTICAL INTERFACE MATRIX v2.6 | MARATHON DESTINATION: EVENT HORIZON COMMANDER")
+st.caption("INTELLIGENT OLYMPIAD CORE SYSTEMS v3.0 | STABLE ARCHITECTURE")
 st.markdown("---")
 
-# HUD Score Panels
+# Visual HUD Panels
 hud_col1, hud_col2, hud_col3 = st.columns(3)
 with hud_col1:
     st.markdown(f"""<div class='hud-box'>
@@ -135,11 +162,10 @@ with hud_col3:
     </div>""", unsafe_allow_html=True)
 
 # ==========================================
-# 🗺️ 4. SIDEBAR NAVIGATION & DEV OVERRIDE
+# 🗺️ 4. NAVIGATION CONSOLE & OVERRIDES
 # ==========================================
 st.sidebar.markdown("### 🖥️ COMMS PANEL")
 
-# --- DEVELOPER DEBUGGING OVERRIDE PANEL ---
 st.sidebar.markdown("---")
 st.sidebar.markdown("⚙️ **MISSION CONTROL OVERRIDE (DEBUG)**")
 dev_mode = st.sidebar.checkbox("Activate Developer Overrides", value=True)
@@ -158,7 +184,7 @@ if dev_mode:
     else:
         current_phase = "Practice Mode"
 else:
-    # AUTOMATIC CALENDAR LOGIC
+    # Automatic calendar logic mapping
     day_of_week = datetime.datetime.now().strftime("%A")
     if day_of_week == "Sunday":
         current_phase = "Exam Mode"
@@ -167,9 +193,9 @@ else:
     else:
         current_phase = "Practice Mode"
 
-# --- DYNAMIC NAVIGATION ROUTING ---
-if st.session_state["username"] if False else st.session_state["exam_active"]:
-    st.sidebar.warning("⚠️ CRITICAL EVENT RUNNING: NAVIGATION CONTROLS LOCKED")
+# Context Routing Routing Tree
+if st.session_state["exam_active"]:
+    st.sidebar.warning("⚠️ CRITICAL EVENT RUNNING: SYSTEMS LOCKED")
     navigation_route = "⚔️ TIMED SUNDAY BATTLE"
 else:
     if current_phase == "Exam Mode":
@@ -179,7 +205,7 @@ else:
     else:
         navigation_route = st.sidebar.radio(
             "NAVIGATE CORE SECTORS", 
-            ["🛡️ LAUNCHPAD READY GATEWAY", "📚 DAILY KNOWLEDGE CAPSULE", "🏋️ FLEXIBLE WEEKDAY PRACTICE POOL"]
+            ["🛡️ LAUNCHPAD READY GATEWAY", "📚 DAILY KNOWLEDGE CAPSULES", "🏋️ FLEXIBLE WEEKDAY PRACTICE POOL"]
         )
 
 # ==========================================
@@ -187,11 +213,11 @@ else:
 # ==========================================
 if navigation_route == "🛡️ LAUNCHPAD READY GATEWAY":
     st.header("🛡️ LAUNCHPAD READINESS PROTOCOL")
-    st.write("Your lifestyle configuration metrics require **any 5 daily routines** to pass verification before weapon/academic loops activate.")
+    st.write("Your schedule configuration parameters require **any 5 daily checklist routines** to unlock active academic modules.")
     
     st.markdown("### 🇮🇳 LINGUISTIC SECTOR BRIDGE")
     st.link_button("🚀 LAUNCH STREAMLIT HINDI MODULE", "https://hindi-learning-app-76cqxakbcig7xau9mrmxh8.streamlit.app/")
-    st.caption("Launches your distinct external Hindi learning matrix in a separate browser workspace tab.")
+    st.caption("Launches your live external Hindi module array in a distinct browser tab link workspace.")
     st.markdown("<br>", unsafe_allow_html=True)
     
     st.subheader("📋 Core Maintenance Checklist")
@@ -199,13 +225,13 @@ if navigation_route == "🛡️ LAUNCHPAD READY GATEWAY":
     
     st.markdown("<div class='hud-box'>", unsafe_allow_html=True)
     for task in tasks_manifest:
-        clean_label = f"✨ {task['name']} — (Complete Exercise via Uplink Link)" if task['tag'] == 'hindi_app' else task['name']
+        clean_label = f"✨ {task['name']} — (Complete Exercise via Uplink Panel)" if task['tag'] == 'hindi_app' else task['name']
         is_checked = st.checkbox(clean_label, key=f"gate_{task['tag']}")
         if is_checked:
             checked_metrics += 1
     st.markdown("</div>", unsafe_allow_html=True)
     
-    # Mathematical Gateway Processing (Cap points at 5 actions for exactly 40%)
+    # Gateway Mathematics Processing (40% maximum discipline capacity check)
     gateway_score = min(checked_metrics, 5) * 8
     st.markdown("<br>", unsafe_allow_html=True)
     
@@ -213,142 +239,18 @@ if navigation_route == "🛡️ LAUNCHPAD READY GATEWAY":
     st.progress(gateway_score / 40.0)
     
     if checked_metrics >= 5:
-        st.success("🔓 MISSION LOCK STABLE: Core habits logged. Flexible academic fields are now fully functional.")
+        st.success("🔓 MISSION LOCK STABLE: Lifestyle routines cleared. Flexible academic spaces are now fully open.")
         st.session_state["lifestyle_approved"] = True
     else:
-        st.warning(f"🔒 TELEMETRY SHIELD ACTIVE: Complete {5 - checked_metrics} more routine tasks to release academic blocks.")
+        st.warning(f"🔒 TELEMETRY SHIELD ACTIVE: Check off {5 - checked_metrics} more routine tasks to clear gating controls.")
         st.session_state["lifestyle_approved"] = False
 
 # ==========================================
-# 📚 ZONE B: DAILY KNOWLEDGE CAPSULES
+# 📚 ZONE B: THE 5-SUBJECT KNOWLEDGE CAPSULES
 # ==========================================
-elif navigation_route == "📚 DAILY KNOWLEDGE CAPSULE":
-    st.header("📚 MISSION INTEL: DAILY KNOWLEDGE CAPSULE")
-    st.caption("MODULE METRIC: CLASS 7 CBSE / OLYMPIAD ALIGNMENT TRACK")
-    st.subheader("💡 Topic Focus: Thermal Systems & Kinetic Expansion (Physics)")
+elif navigation_route == "📚 DAILY KNOWLEDGE CAPSULES":
+    st.header("📚 MISSION INTEL: WEEKLY KNOWLEDGE CAPSULES")
+    st.write("Review your analytical reference briefs across all core subjects before challenging the pools.")
     
-    st.markdown("""
-    ### 🌌 The Core Briefing (Summary)
-    How do satellites survive the freezing vacuum of open space? In space, there are no air molecules. This completely eliminates **Conduction** and **Convection** outside the hull. Spacecraft must balance their internal instrumentation heat entirely using electromagnetic thermal **Radiation**, radiating unwanted thermal units away or preserving energy via gold-plated Multi-Layer Insulation (MLI) blankets.
-    
-    ### ⚡ Quantum Vectors (Key Points)
-    * **Conduction:** Relies on direct physical lattice collisions between vibrating atoms.
-    * **Convection:** Heat transport driven by density changes in fluid or gaseous currents.
-    * **Radiation:** The unique transmission mechanism that travels across empty vacuum via electromagnetic packets. The total energy output scales with absolute Kelvin temperature.
-    * **Analytical Formula Vector:** Energy radiated per second is proportional to absolute temperature raised to the fourth power: $E \propto T^4$.
-    """)
-    
-    st.markdown("---")
-    st.subheader("🔗 Deep Space Transmissions (Verified Free Resources)")
-    
-    col_l1, col_l2 = st.columns(2)
-    with col_l1:
-        st.markdown("""
-        **🎮 Interactive Simulation Laboratory** Explore atomic collision behavior and heat vectors in real-time.
-        """)
-        st.link_button("Run PhET Thermodynamics Lab", "https://phet.colorado.edu/en/simulations/category/physics/heat-and-thermodynamics")
-    with col_l2:
-        st.markdown("""
-        **🚀 NASA System Briefing File** Review authentic structural documents regarding how space exploration hulls withstand thermal radiation fields.
-        """)
-        st.link_button("Access NASA Technical Files", "https://www.nasa.gov")
-
-# ==========================================
-# 🏋️ ZONE C: WEEKDAY COMPLIANCE TRACK (FLEXIBLE)
-# ==========================================
-elif navigation_route == "🏋️ FLEXIBLE WEEKDAY PRACTICE POOL":
-    st.header("🏋️ ACADEMIC MATRIX: FLEXIBLE WEEKDAY POOL")
-    st.write("Target quota: Clear **200 Olympiad-aligned questions** across Math, Physics, Chemistry, Biology, and Logic before Saturday.")
-    
-    if not st.session_state["lifestyle_approved"]:
-        st.error("🔒 SYSTEMS BLOCKED. You must log at least 5 lifestyle checklist markers in the Launchpad Ready Gateway to unlock your weekday practice interface.")
-    else:
-        st.success("🟢 CORE PROTOCOLS SIGNED. Question delivery matrix online.")
-        subject_filter = st.selectbox("CHOOSE TARGET DATA TRACK", ["Mathematics", "Physics", "Chemistry", "Biology", "Logical Reasoning"])
-        
-        st.markdown(f"### Current Pool Content: {subject_filter}")
-        st.markdown(f"""
-        **Question ID #W01_P04 (Subject: {subject_filter} — [70% HOTS Classification])** An elite sounding rocket accelerates upwards from its launching frame. Its velocity profile over time is recorded precisely. If we draw a graph plotting Velocity along the $Y$-axis and Time along the $X$-axis, what physical property does the net geometric **area enclosed directly underneath the curved line** signify?
-        """)
-        
-        user_selection = st.radio(
-            "Select verification data string:",
-            [
-                "Option Delta: Total Linear Displacement achieved by the rocket booster",
-                "Option Gamma: Instantaneous Acceleration rate acting on the hull frame",
-                "Option Sigma: Net Gravitational Drag counter-force"
-            ]
-        )
-        
-        if st.button("TRANSMIT ANSWER VECTOR TO CONTROL"):
-            if "Delta" in user_selection:
-                st.balloons()
-                st.success("✅ TELEMETRY MATCH CONFIRMED. +20 Mission XP added to profile array.")
-                user_profile["current_xp"] += 20
-                save_user_profile(user_profile)
-            else:
-                st.error("❌ SIGNAL MISMATCH detected. Answer routed to hidden Revision Vault array for weekend processing.")
-
-# ==========================================
-# 🔄 ZONE D: REVISION VAULT CLEANUP (SATURDAY)
-# ==========================================
-elif navigation_route == "🔄 REVISION VAULT CLEANUP":
-    st.header("🔄 THE REVISION VAULT CLEANUP")
-    st.write("Every Saturday, new content locks down. You must review and clear every error logged from Monday–Friday practice pools.")
-    
-    if not st.session_state["lifestyle_approved"]:
-        st.error("🔒 SYSTEMS BLOCKED. Complete your lifestyle gateway to access the vault.")
-    else:
-        st.info("🎯 Your error vault currently holds 1 flagged issue. Clear it to release your Saturday completion bonus!")
-        st.write("**Flagged Error #W01_M02 (Mathematics):** Solve for $x$ in the algebraic expression: $3x + 7 = 22$.")
-        choice = st.radio("Input correct balance parameter:", ["x = 5", "x = 4", "x = 6"])
-        
-        if st.button("EXECUTE CORRECTION CLEANUP"):
-            if "5" in choice:
-                st.balloons()
-                st.success("✨ VAULT PURGED. All errors successfully converted to mastery units! +100 XP Vault Bonus.")
-                user_profile["current_xp"] += 100
-                save_user_profile(user_profile)
-            else:
-                st.error("Correction mismatch. Review your core fractional properties and try again.")
-
-# ==========================================
-# ⚔️ ZONE E: THE SUNDAY EXAM BATTLE (TIMED)
-# ==========================================
-elif navigation_route == "⚔️ TIMED SUNDAY BATTLE":
-    st.header("⚔️ CRITICAL BATTLE: TIMED OLYMPIAD WEEKLY MASTER EXAM")
-    st.write("Structure parameters: **60 Minutes. 60 Questions.** 100% High-Intensity HOTS Evaluation.")
-    st.write("---")
-    
-    if not st.session_state["lifestyle_approved"]:
-        st.error("🔒 SECURITY GATE ACTIVE: Weekly Exams cannot be executed unless your underlying lifestyle maintenance checklist is up to telemetry specs.")
-    else:
-        if not st.session_state["exam_active"]:
-            st.warning("⚠️ ALERT: Initiating this matrix starts an irreversible 60-minute terminal countdown link. Navigation controls will lock until complete.")
-            if st.button("💥 INITIALIZE BATTLE PROTOCOLS (START TIMED EXAM)"):
-                st.session_state["exam_active"] = True
-                st.session_state["exam_start_time"] = time.time()
-                st.rerun()
-        else:
-            elapsed_seconds = int(time.time() - st.session_state["exam_start_time"])
-            remaining_seconds = max(3600 - elapsed_seconds, 0)
-            
-            minutes_left = remaining_seconds // 60
-            seconds_left = remaining_seconds % 60
-            
-            st.markdown(f"## ⏱️ MISSION CLOCK TIME REMAINING: `{minutes_left:02d}:{seconds_left:02d}`")
-            st.progress(remaining_seconds / 3600.0)
-            
-            st.markdown("---")
-            st.write("📝 **Exam Question 1 of 60 (Biology Olympiad Standard):**")
-            st.write("A plant cell is placed inside an unknown concentrated solution. Over a 5-minute tracking span, the cell membrane shrinks and detaches from the solid outer cell wall structure while its internal vacuole drops in volume. Deduce the solution type and the name of this biological cellular behavior.")
-            st.radio("Identify choice token:", ["A) Hypertonic solution resulting in full Plasmolysis", "B) Hypotonic solution leading to complete Cytolysis", "C) Isotonic matrix preserving dynamic equilibrium"])
-            
-            if st.button("🏁 CONCLUDE TELEMETRY STRINGS (SUBMIT EXAM)"):
-                st.session_state["exam_active"] = False
-                st.balloons()
-                st.success("🏆 EXAM PACK TRANSMITTED. Score: 88% Accuracy. Next level Astrophysics League promotion path unlocked!")
-                user_profile["current_xp"] += 1500
-                user_profile["league"] = "Kármán Line Voyager"
-                save_user_profile(user_profile)
-                st.rerun()
+    # Render all 5 required subjects cleanly inside tab screens
+    capsule_

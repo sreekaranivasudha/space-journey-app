@@ -1,0 +1,57 @@
+{
+  "week_number": 1,
+  "knowledge_capsules": {
+    "physics": {
+      "topic": "Thermal Systems & Vacuum Insulation",
+      "summary": "How spacecraft manage heat via radiation in a vacuum...",
+      "key_points": ["No conduction/convection in space", "$E \\propto T^4$"],
+      "resources": [{"title": "NASA Passive Thermal Systems", "url": "https://www.nasa.gov"}]
+    },
+    "mathematics": {
+      "topic": "Advanced Operations on Negative Integers",
+      "summary": "Mastering non-intuitive algebraic sign manipulation...",
+      "key_points": ["$(-a) \\times (-b) = ab$", "Vector axis displacements"],
+      "resources": [{"title": "Khan Academy Number Theory", "url": "https://www.khanacademy.org"}]
+    },
+    "chemistry": {
+      "topic": "Acids, Bases, and Neutralization Indicators",
+      "summary": "Analyzing structural molecular transformations using indicators...",
+      "key_points": ["Acids yield $H^+$ ions", "Neutralization: $\\text{Acid} + \\text{Base} \\rightarrow \\text{Salt} + \\text{Water}$"],
+      "resources": [{"title": "PhET Acid-Base Interactive Lab", "url": "https://phet.colorado.edu"}]
+    },
+    "biology": {
+      "topic": "Cellular Respiration Pathways",
+      "summary": "Comparing aerobic and anaerobic energy production in organisms...",
+      "key_points": ["Aerobic: Glucose + $O_2 \\rightarrow CO_2 + H_2O + \\text{ATP}$", "Anaerobic in muscles yields Lactic Acid"],
+      "resources": [{"title": "CrashCourse Biology: Cellular Respiration", "url": "https://www.youtube.com"}]
+    },
+    "logical_reasoning": {
+      "topic": "Alpha-Numeric Matrix Transposition",
+      "summary": "Cracking cyclic pattern shifts and cipher code arrays...",
+      "key_points": ["Step-skipping arithmetic progressions", "Visual matrix rotation indices"],
+      "resources": [{"title": "Open Source Logic Puzzles", "url": "https://www.khanacademy.org"}]
+    }
+  },
+  "weekday_pool": [
+    {
+      "id": "W01_P01",
+      "subject": "Physics",
+      "tier": "HOTS",
+      "question": "Sample Physics Question...",
+      "options": ["A", "B", "C", "D"],
+      "correct": "A",
+      "hint": "Hint text..."
+    }
+    {"comment": "Total of 200 objects will be populated here: 40 per subject"}
+  ],
+  "sunday_exam": [
+    {
+      "id": "W01_EXAM_01",
+      "subject": "Mathematics",
+      "question": "Sample Exam Question...",
+      "options": ["A", "B", "C", "D"],
+      "correct": "B"
+    }
+    {"comment": "Total of 60 high-intensity HOTS objects will be populated here: 12 per subject"}
+  ]
+}

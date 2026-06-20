@@ -1,9 +1,9 @@
 # LIFESTYLE READINESS TRACKING MANIFEST
-Morning Chores & Breakfast  | morning_chores
-Medical Telemetry Intake    | medications
-Linguistic Training (Hindi) | hindi_app
-Current Affairs Processing  | paper_reading
-Literary Exploration        | book_reading
-Entertainment Shielding     | tv_restriction
-Physical Kinetic Training   | physical_sport
-Creative Hobby Development  | hobby_time
+Morning Chores & Breakfast in 60 minutes  | morning_chores in 60 minutes
+Medical Telemetry Intake   		  | medications without reminders
+Linguistic Training (Hindi) for 15 minutes| hindi_app
+Current Affairs Processing for 15 minutes | paper_reading for 15 minutes
+Literary Exploration    for 15 minutes    | book_reading for 15 minutes
+Entertainment Shielding    for 30 minutes | tv_restriction for 30 minutes
+Physical Kinetic Training   		  | physical_sport
+Creative Hobby Development for 30 minutes | hobby_time for 30 minutes
