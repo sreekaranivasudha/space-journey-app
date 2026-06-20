@@ -1,0 +1,9 @@
+# LIFESTYLE READINESS TRACKING MANIFEST
+Morning Chores & Breakfast  | morning_chores
+Medical Telemetry Intake    | medications
+Linguistic Training (Hindi) | hindi_app
+Current Affairs Processing  | paper_reading
+Literary Exploration        | book_reading
+Entertainment Shielding     | tv_restriction
+Physical Kinetic Training   | physical_sport
+Creative Hobby Development  | hobby_time
