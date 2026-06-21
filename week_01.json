@@ -1832,7 +1832,7 @@
     "options": ["A) B", "B) D", "C) E", "D) A"],
     "correct": "A",
     "hint": "C is at position 3 out of 5 ($A, \\_, C, \\_, \\_$). Since A is at position 1 and E sits immediately to the right of D, D and E must occupy positions 4 and 5, leaving position 2 for B."
-  } 
+  },
     {"comment": "Total of 200 objects will be populated here: 40 per subject"}
   ],
   "sunday_exam": [
