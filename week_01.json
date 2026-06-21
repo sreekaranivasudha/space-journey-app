@@ -1,37 +1,85 @@
 {
   "week_number": 1,
-  "knowledge_capsules": {
+ "knowledge_capsules": {
     "physics": {
-      "topic": "Thermal Systems & Vacuum Insulation",
-      "summary": "How spacecraft manage heat via radiation in a vacuum...",
-      "key_points": ["No conduction/convection in space", "$E \\propto T^4$"],
-      "resources": [{"title": "NASA: On the Fringe of Space (Passive Thermal Control)", "url": "https://www.nasa.gov/smallsat-institute/space-mission-design-tools/passive-thermal-control/"}]
+      "topic": "Thermal Systems, Vacuum Insulation & Average Speed",
+      "summary": "Mastering thermal energy radiation physics ($E \\propto T^4$) in atmospheric vacuums, mechanical conduction loops, linear thermal expansion tracking, and systemic average speed calculations.",
+      "key_points": [
+        "Conduction and convection require a physical medium; radiation propagates through a vacuum via electromagnetic waves.",
+        "Stefan-Boltzmann Law: Radiated power scales with the fourth power of absolute temperature ($E \\propto T^4$).",
+        "Linear expansion relates length changes to initial dimensions: $\\Delta L = L_0 \\cdot \\alpha \\cdot \\Delta T$.",
+        "Average speed requires tracking total journey metrics: $\\text{Average Speed} = \\text{Total Distance} / \\text{Total Time}$."
+      ],
+      "resources": [
+        {"title": "NASA: Passive Spacecraft Thermal Control Systems", "url": "https://www.nasa.gov/smallsat-institute/space-mission-design-tools/passive-thermal-control/"},
+        {"title": "Khan Academy: Thermal Conductivity & Radiation Mechanics", "url": "https://www.khanacademy.org/science/in-in-class-11-physics-india/x669d7b90d2938e07:thermal-properties-of-matter/x669d7b90d2938e07:heat-transfer/v/thermal-conduction-convection-radiation"},
+        {"title": "Khan Academy: Linear Thermal Expansion Physics", "url": "https://www.khanacademy.org/science/physics/thermodynamics/temp-kinetic-theory-ideal-gas-law/v/thermal-expansion"},
+        {"title": "Khan Academy: Calculating Average Speed & Motion Vectors", "url": "https://www.khanacademy.org/math/cc-third-grade-math/imp-measurement-and-data/imp-mass-and-volume/v/average-speed-word-problems"}
+      ]
     },
     "mathematics": {
-      "topic": "Advanced Operations on Negative Integers",
-      "summary": "Mastering non-intuitive algebraic sign manipulation...",
-      "key_points": ["$(-a) \\times (-b) = ab$", "Vector axis displacements"],
-      "resources": [{"title": "Khan Academy: Negative Numbers & Integers", "url": "https://www.khanacademy.org/math/cc-sixth-grade-math/cc-6th-negative-number-topic"}]
+      "topic": "Advanced Operations on Negative Integers & Inequalities",
+      "summary": "Navigating non-intuitive algebraic sign manipulation rules, multi-step order of operations with negative coordinates, set permutations for absolute parameters ($|x| < c$), and alternating number sequences.",
+      "key_points": [
+        "Product signs depend on parity: $(-a) \\times (-b) = ab$, while $(-a) \\times (-b) \\times (-c) = -abc$.",
+        "Subtracting a negative value is equivalent to adding its absolute value geometric mirror: $a - (-b) = a + b$.",
+        "Absolute bounds define a dual-ended open or closed interval on a number line vector: $|x| < c \\rightarrow -c < x < c$.",
+        "Series sequences can be efficiently computed by grouping consecutive alternating terms into static pairs."
+      ],
+      "resources": [
+        {"title": "Khan Academy: Multiplying & Dividing Negative Integers", "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-multiply-divide"},
+        {"title": "Khan Academy: Order of Operations with Negative Terms", "url": "https://www.khanacademy.org/math/cc-seventh-grade-math/cc-7th-negative-numbers-add-subtract/cc-7th-order-of-operations/v/order-of-operations-with-negative-numbers"},
+        {"title": "Khan Academy: Absolute Value Inequalities on a Number Line", "url": "https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:solve-equations-inequalities/x2f8bb11595b61c86:absolute-value-equations/v/absolute-value-inequalities"}
+      ]
     },
     "chemistry": {
       "topic": "Acids, Bases, and Neutralization Indicators",
-      "summary": "Analyzing structural molecular transformations using indicators...",
-      "key_points": ["Acids yield $H^+$ ions", "Neutralization: $\\text{Acid} + \\text{Base} \\rightarrow \\text{Salt} + \\text{Water}$"],
-      "resources": [{"title": "PhET Interactive Simulation: Acid-Base Solutions", "url": "https://phet.colorado.edu/en/simulations/acid-base-solutions"}]
+      "summary": "Analyzing structural molecular transformations using synthetic and natural pH indicators, reactivity series of metals with dilute mineral acids, and real-world neutralization balancing acts.",
+      "key_points": [
+        "Acids release aqueous hydrogen ions ($H^+$); bases supply hydroxide ions ($OH^-$) or accept protons.",
+        "Neutralization is an exothermic reaction transforming toxic ions into stable compounds: $\\text{Acid} + \\text{Base} \\rightarrow \\text{Salt} + \\text{Water} + \\text{Heat}$.",
+        "Phenolphthalein remains colorless in acidic/neutral media but shifts to clear pink above pH 8.2.",
+        "Metals above Hydrogen in the reactivity series displace it to liberate flammable Hydrogen gas ($H_2$)."
+      ],
+      "resources": [
+        {"title": "PhET Interactive Simulation: Acid-Base Solution Ion Concentration", "url": "https://phet.colorado.edu/en/simulations/acid-base-solutions"},
+        {"title": "Khan Academy: Introduction to Acids, Bases, and the pH Scale", "url": "https://www.khanacademy.org/science/class-11-chemistry-india/x6b10700d31599369:equilibrium/x6b10700d31599369:acid-base-and-salts/v/introduction-to-acids-and-bases"},
+        {"title": "Amrita Creative Lab: Interactive Acid-Base Neutralization Titration", "url": "https://vlab.amrita.edu/?sub=2&brch=193&sim=351&cnt=1"},
+        {"title": "Khan Academy: Activity Series and Metal Displacement Chemistry", "url": "https://www.khanacademy.org/science/ap-chemistry-beta/x2d5f84c307563711:chemical-reactions/x2d5f84c307563711:stoichiometry/v/displacement-reactions"}
+      ]
     },
     "biology": {
-      "topic": "Cellular Respiration Pathways",
-      "summary": "Comparing aerobic and anaerobic energy production in organisms...",
-      "key_points": ["Aerobic: Glucose + $O_2 \\rightarrow CO_2 + H_2O + \\text{ATP}$", "Anaerobic in muscles yields Lactic Acid"],
-      "resources": [{"title": "Khan Academy: Cellular Respiration Introduction", "url": "https://www.khanacademy.org/science/ap-biology/cellular-energetics/cellular-respiration-ap/v/introduction-to-cellular-respiration"}]
+      "topic": "Cellular Respiration Pathways & Plant Vascular Transport",
+      "summary": "Investigating metabolic breakdown paths across aerobic and anaerobic conditions, tracking the photolysis of water in photosynthesis, and modeling root cell active transport against concentration gradients.",
+      "key_points": [
+        "Aerobic respiration fully oxidizes glucose inside the mitochondria: $\\text{Glucose} + O_2 \\rightarrow CO_2 + H_2O + \\text{ATP}$.",
+        "Anaerobic pathways occur in the cytoplasm; yeast produces ethanol and $CO_2$, while strained animal muscles yield lactic acid.",
+        "Xylem tissue consists of non-living, hollow pipelines moving water and minerals upward via transpirational pulling tension.",
+        "Root hair cells deploy active transport proteins powered by ATP to pump mineral ions from low soil concentrations into the cell."
+      ],
+      "resources": [
+        {"title": "Khan Academy: Detailed Breakdown of Cellular Respiration Stages", "url": "https://www.khanacademy.org/science/ap-biology/cellular-energetics/cellular-respiration-ap/v/introduction-to-cellular-respiration"},
+        {"title": "Khan Academy: Light-Dependent Reactions & Photolysis in Plants", "url": "https://www.khanacademy.org/science/ap-biology/cellular-energetics/photosynthesis-ap/v/light-dependent-reactions-of-photosynthesis"},
+        {"title": "Khan Academy: Active Transport Mechanisms vs. Passive Osmosis", "url": "https://www.khanacademy.org/science/ap-biology/cell-structure-and-function/membrane-transport-ap/v/active-transport"},
+        {"title": "BBC Bitesize: Transport Systems in Plants (Xylem, Phloem, and Transpiration)", "url": "https://www.bbc.co.uk/bitesize/guides/zps82hv/revision/1"}
+      ]
     },
     "logical_reasoning": {
-      "topic": "Alpha-Numeric Matrix Transposition",
-      "summary": "Cracking cyclic pattern shifts and cipher code arrays...",
-      "key_points": ["Step-skipping arithmetic progressions", "Visual matrix rotation indices"],
-      "resources": [{"title": "Khan Academy: Matrix Transformations", "url": "https://www.khanacademy.org/math/precalculus/x9e81a4f50142fe0a:matrices/x9e81a4f50142fe0a:transforming-matrices-with-matrices/v/matrix-transformations-intro"}]
+      "topic": "Alpha-Numeric Matrix Transposition & Spatial Logic",
+      "summary": "Deconstructing multi-layered cipher strings, resolving spatial coordinate vectors with multi-directional angular rotations, mapping relational inequalities for linear ranking, and circle seating logic structures.",
+      "key_points": [
+        "Alphanumeric progressions often run parallel sequence rules: independent number steps and distinct letter skips.",
+        "Spatial directional tracking requires establishing a net angular displacement vector relative to cardinal points.",
+        "Linear ranking problems are systematically solved by building structured chain inequalities ($A > B \\ge C$).",
+        "Circular arrangement problems require positioning fixed reference boundaries before relative variables are evaluated."
+      ],
+      "resources": [
+        {"title": "Khan Academy: Complex Pattern Mapping & Sequential Progressions", "url": "https://www.khanacademy.org/math/algebra/x2f8bb11595b61c86:sequences/x2f8bb11595b61c86:introduction-to-formulas-of-sequences/v/patterns-and-sequences"},
+        {"title": "Khan Academy: Rotational Vector Coordinates & Angles", "url": "https://www.khanacademy.org/math/geometry/hs-geo-transformations/hs-geo-rotations/v/rotation-introduction"},
+        {"title": "GeeksforGeeks: Advanced Logical Reasoning Guide (Circular Seating & Relations)", "url": "https://www.geeksforgeeks.org/circular-sitting-arrangement-reasoning/"}
+      ]
     }
-  },
+  },  
   "weekday_pool": [
     {
       "id": "W01_PHYS_01",
