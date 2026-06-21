@@ -1,6 +1,6 @@
 {
   "week_number": 1,
-  "knowledge_capsules": "knowledge_capsules": {
+  "knowledge_capsules": {
     "physics": {
       "topic": "Thermal Systems & Vacuum Insulation",
       "summary": "How spacecraft manage heat via radiation in a vacuum...",
