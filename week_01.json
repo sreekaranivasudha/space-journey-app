@@ -1201,7 +1201,7 @@
     "question": "A metal rod has one end placed in a steady flame while the other end is held in an ice bath. Once the system stabilizes into a steady state of heat transfer, how does the temperature change along the length of the rod?",
     "options": ["A) The temperature drops abruptly to freezing right at the midpoint of the rod", "B) The temperature decreases uniformly and linearly from the hot end to the cold end", "C) The entire rod reaches a single uniform temperature matching the flame", "D) The temperature cycles up and down in a wave pattern along the rod"],
     "correct": "B",
-    "hint": "In a steady state of one-dimensional conduction along a uniform rod with insulated sides, the temperature gradient ($\\Delta T / \Delta x$) remains constant."
+    "hint": "In a steady state of one-dimensional conduction along a uniform rod with insulated sides, the temperature gradient ($\\Delta T /Delta x$) remains constant."
   },
   {
     "id": "W01_MATH_26",
