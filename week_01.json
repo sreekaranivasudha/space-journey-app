@@ -257,7 +257,7 @@
     "options": ["A) Vacuum", "B) Echo", "C) Pitch", "D) Decibel"],
     "correct": "B",
     "hint": "Identify the logical link: Refraction is a physical wave phenomenon experienced by light as it shifts mediums. What is a core wave phenomenon experienced by sound when it encounters a solid boundary?"
-  }
+  },
   {
     "id": "W01_PHYS_06",
     "subject": "Physics",
