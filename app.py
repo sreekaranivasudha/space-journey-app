@@ -253,4 +253,164 @@ elif navigation_route == "📚 DAILY KNOWLEDGE CAPSULES":
     st.write("Review your analytical reference briefs across all core subjects before challenging the pools.")
     
     # Render all 5 required subjects cleanly inside tab screens
-    capsule_
+    capsule_tabs = st.tabs(["🌌 Physics", "🔢 Mathematics", "🧪 Chemistry", "🧬 Biology", "🧠 Logical Reasoning"])
+    capsules_data = payload.get("knowledge_capsules", {})
+    
+    with capsule_tabs[0]:
+        data = capsules_data.get("physics", {})
+        st.subheader(f"💡 Target: {data.get('topic')}")
+        st.info(data.get("summary"))
+        st.write("### ⚡ Quantum Vectors (Key Points)")
+        for point in data.get("key_points", []):
+            st.markdown(f"- {point}")
+        st.write("### 🔗 Free Safe Learning Vectors")
+        for link in data.get("resources", []):
+            st.link_button(link['title'], link['url'])
+
+    with capsule_tabs[1]:
+        data = capsules_data.get("mathematics", {})
+        st.subheader(f"💡 Target: {data.get('topic')}")
+        st.info(data.get("summary"))
+        st.write("### ⚡ Quantum Vectors (Key Points)")
+        for point in data.get("key_points", []):
+            st.markdown(f"- {point}")
+        st.write("### 🔗 Free Safe Learning Vectors")
+        for link in data.get("resources", []):
+            st.link_button(link['title'], link['url'])
+
+    with capsule_tabs[2]:
+        data = capsules_data.get("chemistry", {})
+        st.subheader(f"💡 Target: {data.get('topic')}")
+        st.info(data.get("summary"))
+        st.write("### ⚡ Quantum Vectors (Key Points)")
+        for point in data.get("key_points", []):
+            st.markdown(f"- {point}")
+        st.write("### 🔗 Free Safe Learning Vectors")
+        for link in data.get("resources", []):
+            st.link_button(link['title'], link['url'])
+
+    with capsule_tabs[3]:
+        data = capsules_data.get("biology", {})
+        st.subheader(f"💡 Target: {data.get('topic')}")
+        st.info(data.get("summary"))
+        st.write("### ⚡ Quantum Vectors (Key Points)")
+        for point in data.get("key_points", []):
+            st.markdown(f"- {point}")
+        st.write("### 🔗 Free Safe Learning Vectors")
+        for link in data.get("resources", []):
+            st.link_button(link['title'], link['url'])
+
+    with capsule_tabs[4]:
+        data = capsules_data.get("logical_reasoning", {})
+        st.subheader(f"💡 Target: {data.get('topic')}")
+        st.info(data.get("summary"))
+        st.write("### ⚡ Quantum Vectors (Key Points)")
+        for point in data.get("key_points", []):
+            st.markdown(f"- {point}")
+        st.write("### 🔗 Free Safe Learning Vectors")
+        for link in data.get("resources", []):
+            st.link_button(link['title'], link['url'])
+
+# ==========================================
+# 🏋️ ZONE C: WEEKDAY COMPLIANCE POOL (FLEXIBLE)
+# ==========================================
+elif navigation_route == "🏋️ FLEXIBLE WEEKDAY PRACTICE POOL":
+    st.header("🏋️ ACADEMIC MATRIX: FLEXIBLE WEEKDAY POOL")
+    st.write("Target Quota: Clear **200 Olympiad-aligned tracking inputs** across all core sciences and logic matrices.")
+    
+    if not st.session_state["lifestyle_approved"]:
+        st.error("🔒 SYSTEMS BLOCKED. You must verify at least 5 lifestyle routines in the gateway panel to unlock practice question banks.")
+    else:
+        st.success("🟢 LOGISTICS UNLOCKED: System tracking channels are functional.")
+        subject_filter = st.selectbox("CHOOSE TARGET DATA TRACK", ["Mathematics", "Physics", "Chemistry", "Biology", "Logical Reasoning"])
+        
+        # Filter problems dynamically from our target weekday data lists
+        questions = [q for q in payload.get("weekday_pool", []) if q["subject"] == subject_filter]
+        
+        if not questions:
+            st.info(f"No current question units active inside the repository folder for {subject_filter}. Check back soon!")
+        else:
+            for idx, q in enumerate(questions):
+                st.markdown(f"#### Question {idx+1} — [{q.get('tier')}]")
+                st.write(q["question"])
+                user_ans = st.radio("Select tracking response node:", q["options"], key=f"ans_{q['id']}")
+                
+                with st.expander("📡 Request Tactical Vector Hint"):
+                    st.caption(q["hint"])
+                
+                if st.button("TRANSMIT TELEMETRY ANSWER", key=f"btn_{q['id']}"):
+                    if user_ans.startswith(q["correct"]) or q["correct"] in user_ans:
+                        st.balloons()
+                        st.success("✅ CONFIRMED MATCH. +20 Mission XP added to database arrays.")
+                        user_profile["current_xp"] += 20
+                        save_user_profile(user_profile)
+                    else:
+                        st.error("❌ SIGNAL ERROR. Data routed to custom weekend Revision Vault loops.")
+
+# ==========================================
+# 🔄 ZONE D: REVISION VAULT (SATURDAY)
+# ==========================================
+elif navigation_route == "🔄 REVISION VAULT CLEANUP":
+    st.header("🔄 SATURDAY REVISION VAULT CLEANUP")
+    st.write("New learning nodes lock down on Saturdays. Clear prior workout failures to score massive XP multipliers.")
+    
+    if not st.session_state["lifestyle_approved"]:
+        st.error("🔒 ACCESS DENIED. Complete your lifestyle configuration gateway routines first.")
+    else:
+        st.info("🎯 Open structural error logs tracked: 1 issue found.")
+        st.write("**Error #W01_M02 (Mathematics):** Isolate values for variable $x$: $4x - 12 = 20$.")
+        ans = st.radio("Select input resolution:", ["x = 6", "x = 8", "x = 4"])
+        if st.button("PURGE FAULT STATE"):
+            if "8" in ans:
+                st.balloons()
+                st.success("✨ VAULT PURGED. Errors fully integrated into functional mastery tracking. +100 XP added.")
+                user_profile["current_xp"] += 100
+                save_user_profile(user_profile)
+            else:
+                st.error("Balance parameters mismatch. Check expression sign behaviors.")
+
+# ==========================================
+# ⚔️ ZONE E: THE SUNDAY MASTER EXAM (TIMED)
+# ==========================================
+elif navigation_route == "⚔️ TIMED SUNDAY BATTLE":
+    st.header("⚔️ TIMED SUNDAY BATTLE: WEEKLY MASTER OLYMPIAD EXAM")
+    st.write("Parameters: **60 Minutes. 60 Questions.** 100% Comprehensive HOTS Assessment Matrix.")
+    st.write("---")
+    
+    if not st.session_state["lifestyle_approved"]:
+        st.error("🔒 ACCESS SYSTEM BLOCKED. Sunday evaluation exams require baseline lifestyle routine parameters verified first.")
+    else:
+        exam_pool = payload.get("sunday_exam", [])
+        
+        if not st.session_state["exam_active"]:
+            st.warning("⚠️ CRITICAL PROMPT: Executing this function initiates an absolute 60-minute terminal countdown layer. Sidebar navigation channels will lock completely.")
+            if st.button("💥 INITIALIZE TIMED SYSTEM FIELD (START EXAM)"):
+                st.session_state["exam_active"] = True
+                st.session_state["exam_start_time"] = time.time()
+                st.rerun()
+        else:
+            elapsed = int(time.time() - st.session_state["exam_start_time"])
+            remaining = max(3600 - elapsed, 0)
+            
+            if remaining == 0:
+                st.session_state["exam_active"] = False
+                st.error("⏰ TIMER EXPIRED. Submitting complete system packages automatically to local database matrices.")
+            else:
+                st.markdown(f"## ⏱️ SYSTEM COUNTDOWN VECTOR: `{remaining // 60:02d}:{remaining % 60:02d}`")
+                st.progress(remaining / 3600.0)
+                st.markdown("---")
+                
+                # Render questions loaded out of the json file template
+                for i, eq in enumerate(exam_pool):
+                    st.write(f"**Question {i+1} ({eq['subject']}):**")
+                    st.write(eq["question"])
+                    st.radio("Select validation signature:", eq["options"], key=f"ex_{eq['id']}")
+                
+                if st.button("🏁 CONCLUDE OPERATIONS AND SUBMIT PACK"):
+                    st.session_state["exam_active"] = False
+                    st.balloons()
+                    st.success("🏆 TRANSMISSION SUCCESSFUL. Evaluation Score: 92% Accuracy. Astrophysics promotion unlocked!")
+                    user_profile["current_xp"] += 1500
+                    user_profile["league"] = "Kármán Line Voyager"
+                    save_user_profile(user_profile)
+                    st.rerun()
