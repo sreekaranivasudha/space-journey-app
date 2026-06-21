@@ -34,14 +34,1805 @@
   },
   "weekday_pool": [
     {
-      "id": "W01_P01",
-      "subject": "Physics",
-      "tier": "HOTS",
-      "question": "Sample Physics Question...",
-      "options": ["A", "B", "C", "D"],
-      "correct": "A",
-      "hint": "Hint text..."
-    }
+    "id": "W01_PHYS_01",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An experimental lunar rover hull is exposed to direct solar radiation on the Moon's surface where there is no atmosphere. If the surface temperature of the hull climbs from $300\\text{ C}$ to $600\\text{ C}$ absolute temperature scale (Kelvin), by what factor does the total thermal energy radiated out by the hull per second change?",
+    "options": ["A) It increases by a factor of 2", "B) It increases by a factor of 4", "C) It increases by a factor of 16", "D) It remains perfectly constant due to vacuum shielding"],
+    "correct": "C",
+    "hint": "Recall that thermal radiation energy output is governed by the fourth power of absolute Kelvin temperature: $E \\propto T^4$."
+  },
+  {
+    "id": "W01_PHYS_02",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A student places a sensitive digital thermometer inside a tightly sealed glass vacuum flask containing boiling water. She notes that while the liquid cools down slowly over hours, the outer wall of the flask remains completely cool to the touch. Which mechanism is entirely responsible for the thermal loss from the liquid through the vacuum space?",
+    "options": ["A) Molecular Lattice Conduction", "B) Fluid Density Convection Currents", "C) Infrared Electromagnetic Radiation", "D) Latent Atmospheric Evaporation"],
+    "correct": "C",
+    "hint": "Conduction and Convection absolutely require material molecules to transfer kinetic energy. A vacuum contains no such medium."
+  },
+  {
+    "id": "W01_PHYS_03",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "A space capsule's tracking antenna is made of a composite alloy that expands linearly when passing from the cold shadow of Earth into direct sunlight. If the temperature jumps by $\\Delta T$ and the linear expansion coefficient is $\\alpha$, what is the fractional change in the antenna's structural length ($\\Delta L / L_0$)?",
+    "options": ["A) $\\alpha \\cdot \\Delta T$", "B) $\\alpha / \\Delta T$", "C) $\\alpha \\cdot (\\Delta T)^2$", "D) $1 + \\alpha \\cdot \\Delta T$"],
+    "correct": "A",
+    "hint": "Linear thermal expansion formula maps change as $\\Delta L = L_0 \\cdot \\alpha \\cdot \\Delta T$."
+  },
+  {
+    "id": "W01_PHYS_04",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Two metallic tracking blocks, Block X ($1\\text{ kg}$, Specific Heat $c$) and Block Y ($2\\text{ kg}$, Specific Heat $2c$), receive an identical amount of thermal energy ($Q$) from an electrical surge inside a satellite cockpit. What is the ratio of the temperature change of Block X to Block Y ($\\Delta T_X : \\Delta T_Y$)?",
+    "options": ["A) $1:2$", "B) $2:1$", "C) $1:4$", "D) $4:1$"],
+    "correct": "D",
+    "hint": "Use the fundamental thermodynamic formula $Q = m \\cdot c \\cdot \\Delta T$. Isolate $\\Delta T$ and establish your fractional proportions."
+  },
+  {
+    "id": "W01_PHYS_05",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "A thermal radiator panel on the International Space Station is painted flat black, while the main cabin walls are wrapped in reflective shiny multi-layer insulation sheets. Why do engineers intentionally choose dark textures for the radiator panels?",
+    "options": ["A) Dark bodies reflect ambient starlight better", "B) Good absorbers of thermal energy are also excellent emitters of radiation", "C) Dark pigments eliminate internal convection currents", "D) Shiny surfaces accelerate structural heat leakage via conduction"],
+    "correct": "B",
+    "hint": "Review Kirchhoff's Law of Thermal Radiation: a surface's emissivity matches its absorptivity at a given wavelength."
+  },
+  {
+    "id": "W01_MATH_01",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An integer sequencing algorithm at Mission Control processes deep-space data packets using the explicit alternating functional rule: $f(n) = (-1)^n \\cdot n$. What is the cumulative value of the series summation if we calculate $f(1) + f(2) + f(3) + \\dots + f(100)$?",
+    "options": ["A) -50", "B) 50", "C) -100", "D) 0"],
+    "correct": "B",
+    "hint": "Group adjacent terms into consecutive index pairs: $(-1 + 2) + (-3 + 4) + (-5 + 6) \\dots$ Check the value of each sub-pair."
+  },
+  {
+    "id": "W01_MATH_02",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Let $a$ and $b$ be two negative integers such that $a < b$ on a standard coordinate number line vector. Which of the following mathematical inequalities regarding their absolute products must always hold true?",
+    "options": ["A) $a \\cdot b < 0$", "B) $a - b > 0$", "C) $|a| > |b|$", "D) $a / b < 0$"],
+    "correct": "C",
+    "hint": "On a negative number line, numbers further to the left are smaller in value but represent a greater geometric distance from zero."
+  },
+  {
+    "id": "W01_MATH_03",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A digital cooling controller inside a server rack executes an integer logic step: it multiplies the current ambient core value by $-3$ and then subtracts $-15$. If the initial core metric read $-5$, what is the final terminal output value generated by the processor?",
+    "options": ["A) 0", "B) 30", "C) -30", "D) 20"],
+    "correct": "B",
+    "hint": "Follow step order strictly: Multiply $(-5) \\cdot (-3)$, then carefully track the double-negative operation when subtracting $(-15)$."
+  },
+  {
+    "id": "W01_MATH_04",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "What is the product of all integer values satisfying the strict absolute configuration parameter $|x| < 4$?",
+    "options": ["A) 36", "B) -36", "C) 0", "D) 24"],
+    "correct": "C",
+    "hint": "List out the complete valid set of positive and negative integers bounded by this range. Does the set contain a neutralizing factor?"
+  },
+  {
+    "id": "W01_MATH_05",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "The temperature of a cryo-storage unit drops uniformly at a constant rate of $4^\\circ\\text{C}$ every hour. If the current temperature monitoring grid registers exactly $12^\\circ\\text{C}$, what was the tracked integer value of the chamber exactly 5 hours ago?",
+    "options": ["A) $-8^\\circ\\text{C}$", "B) $32^\\circ\\text{C}$", "C) $20^\\circ\\text{C}$", "D) $-12^\\circ\\text{C}$"],
+    "correct": "B",
+    "hint": "Going backward in time reverses a dropping rate, meaning you must add the total temperature change over those 5 hours back to the current value."
+  },
+  {
+    "id": "W01_CHEM_01",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "An astrobiologist mixes an unknown liquid extracted from a meteorite matrix with a neutral blue litmus indicator solution, causing it to flash bright red. She then drips a concentrated solution of Magnesium Hydroxide into the container until the litmus returns to its neutral point. What specific chemical event occurred during the second step?",
+    "options": ["A) An displacement reaction liberating highly volatile Hydrogen gas", "B) A neutralization reaction yielding a salt matrix and water", "C) A physical phase crystallization dropping molecular kinetic energy", "D) Thermal decomposition of an organic hydrocarbon asset"],
+    "correct": "B",
+    "hint": "Look closely at your active reactants: the meteorite liquid turned blue litmus red (Acid), and Magnesium Hydroxide is a standard Base."
+  },
+  {
+    "id": "W01_CHEM_02",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "A student adds a sample of clear Hydrochloric Acid to a test tube containing solid Sodium Carbonate. She immediately observes vigorous effervescence and bubbles forming. If she pipes this escaping gas through fresh lime water, what visual change confirms the gas identity?",
+    "options": ["A) The lime water turns dark blue", "B) The lime water turns milky due to a Calcium Carbonate precipitate", "C) The solution catches fire with a distinct popping sound", "D) The fluid remains perfectly clear but begins to smell like sulfur"],
+    "correct": "B",
+    "hint": "Acids reacting with metal carbonates characteristically liberate Carbon Dioxide ($CO_2$) gas. Recall the analytical test for $CO_2$."
+  },
+  {
+    "id": "W01_CHEM_03",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "You are analyzing three unmarked testing beakers containing distinct solutions. Beaker X turns Phenolphthalein bright pink. Beaker Y leaves Phenolphthalein colorless but turns China Rose indicator magenta. Beaker Z leaves both indicators completely unchanged. Identify the correct chemical classification sequence:",
+    "options": ["A) X: Acid, Y: Base, Z: Neutral", "B) X: Base, Y: Acid, Z: Neutral", "C) X: Neutral, Y: Acid, Z: Base", "D) X: Base, Y: Neutral, Z: Acid"],
+    "correct": "B",
+    "hint": "Phenolphthalein remains colorless in acidic or neutral matrices but triggers pink in basic environments. China Rose turns magenta in acids."
+  },
+  {
+    "id": "W01_CHEM_04",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "Why is factory waste chemically treated with basic substances like slaked lime before being discharged into public aquatic systems and rivers?",
+    "options": ["A) To increase the overall concentration of toxic organic matter for filtration", "B) To neutralize highly acidic chemical components that would destroy aquatic ecosystems", "C) To convert neutral fluids into strong basic compounds to accelerate river flow", "D) To prevent the water from freezing under high high-altitude conditions"],
+    "correct": "B",
+    "hint": "Most manufacturing byproducts contain acidic effluents. Neutralization creates safe, stable salts."
+  },
+  {
+    "id": "W01_CHEM_05",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "When a person is stung by a honeybee, formic acid is injected beneath the dermal layer, causing sharp pain. Applying a paste of moist baking soda (Sodium Hydrogen Carbonate) provides rapid relief. What type of molecular reaction explains this therapeutic effect?",
+    "options": ["A) Thermal Decomposition", "B) Neutralization", "C) Aerobic Oxidation", "D) Fractional Distillation"],
+    "correct": "B",
+    "hint": "Baking soda is a mild, non-corrosive base. Mixing it with a localized acid neutralizes the corrosive ions causing the nerve irritation."
+  },
+  {
+    "id": "W01_BIOL_01",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "During a simulated high-g acceleration centrifuge run, a test pilot's muscle cells experience an acute deficit of Oxygen gas supply, forcing an emergency anaerobic respiration loop. Which specific metabolic byproduct will accumulate rapidly inside the pilot's muscle tissue?",
+    "options": ["A) Ethanol and Carbon Dioxide gas bubbles", "B) Lactic Acid molecules only", "C) Acetic Acid and localized oxygen gas", "D) Simple glucose polymers and structural starch"],
+    "correct": "B",
+    "hint": "Anaerobic breakdown pathways inside human animal muscle tissue yield a different byproduct than anaerobic fermentation inside yeast cells."
+  },
+  {
+    "id": "W01_BIOL_02",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "A botanical research module covers a target plant's green leaves with a thin layer of breathable waterproof wax, sealing only the stomatal pores on the lower epidermis. What primary physiological process will immediately stall as a direct result?",
+    "options": ["A) Root water absorption from soil matrices", "B) Gaseous exchange of $CO_2$ and $O_2$ required for photosynthesis and respiration", "C) Intracellular structural translocation of complex sugars via xylem vessels", "D) Structural cellular mitosis inside root tip meristems"],
+    "correct": "B",
+    "hint": "Stomata act as the primary microscopic gateways regulating gas diffusion and transpiration vapor release in plant leaves."
+  },
+  {
+    "id": "W01_BIOL_03",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "An elegant hydroponic experiment supplies a plant with water containing a heavy isotope of oxygen ($^{18}\\text{O}$), while the surrounding atmosphere contains standard Carbon Dioxide ($^{16}\\text{CO}_2$). Following sustained light exposure, where will the heavy $^{18}\\text{O}$ isotope be detected?",
+    "options": ["A) Trapped inside synthesized solid Glucose molecules", "B) Released into the air as Oxygen gas ($O_2$)", "C) Exclusively within the cellulose wall structures", "D) Bound within the molecular core of chlorophyl pigments"],
+    "correct": "B",
+    "hint": "Recall the light-dependent stage of photosynthesis: water molecules undergo photolysis (splitting), which generates the molecular oxygen gas that is released."
+  },
+  {
+    "id": "W01_BIOL_04",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do Earth's desert plants (xerophytes) possess modified structural attributes like leaves reduced to thin spines and thick waxy cuticles covering their stems?",
+    "options": ["A) To maximize internal rate parameters of cellular respiration", "B) To significantly reduce water loss via the transpiration loop", "C) To absorb ambient gaseous humidity directly through specialized cell walls", "D) To eliminate the need for functional root transport xylem networks"],
+    "correct": "B",
+    "hint": "Broad leaf surface areas accelerate evaporation under high heat. Spines minimize surface area while providing a defense mechanism."
+  },
+  {
+    "id": "W01_BIOL_05",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A cell biologist isolates a sample of living yeast organisms and places them into a completely sealed flask filled with a $10\\%$ glucose solution, purging all atmospheric Oxygen gas. Over the next 48 hours, what changes will occur in the flask's chemical composition?",
+    "options": ["A) Glucose levels rise, and Oxygen gas is produced", "B) Glucose levels drop, while Ethanol and Carbon Dioxide concentrations rise", "C) Glucose is converted directly into dense Lactic Acid without gas evolution", "D) Cell respiration halts completely, leading to immediate structural lysis"],
+    "correct": "B",
+    "hint": "Yeast are facultative anaerobes. In the complete absence of oxygen, they undergo alcoholic fermentation to derive cellular energy."
+  },
+  {
+    "id": "W01_LOGIC_01",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "If a satellite communication code transposes the command word 'ORBIT' into the encrypted telemetry string 'PVDJU', decode the operational pattern to find the encrypted version of the target word 'LAUNCH'.",
+    "options": ["A) MZXOFB", "B) MCWPFJ", "C) MCOIDG", "D) NDVOHK"],
+    "correct": "B",
+    "hint": "Analyze the letter shift progressions from letter positions: O to P (+1), R to V (+4), B to D (+2), I to J (+1), T to U (+1)... trace the cyclic mathematical loop."
+  },
+  {
+    "id": "W01_LOGIC_02",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Find the missing alphanumeric data token in the following sequence progression: 3F, 6G, 11I, 18L, ?",
+    "options": ["A) 27P", "B) 25O", "C) 27O", "D) 29Q"],
+    "correct": "A",
+    "hint": "Break down the sequence into two distinct parallel lines: Numbers increase by consecutive odd values ($+3, +5, +7, +9$). Letters shift by increasing step counts ($+1, +2, +3, +4$)."
+  },
+  {
+    "id": "W01_LOGIC_03",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Point Alpha is situated exactly $10\\text{ meters}$ North of Point Beta. Point Gamma is mapped $6\\text{ meters}$ East of Point Alpha. Point Delta is located $18\\text{ meters}$ South of Point Gamma. What is the shortest straight-line coordinate distance between Point Beta and Point Delta?",
+    "options": ["A) $14\\text{ meters}$", "B) $10\\text{ meters}$", "C) $12\\text{ meters}$", "D) $8\\text{ meters}$"],
+    "correct": "B",
+    "hint": "Sketch out the layout vectors on a flat coordinate sheet. Apply the Pythagorean theorem ($a^2 + b^2 = c^2$) to the resulting right-angled triangle profile."
+  },
+  {
+    "id": "W01_LOGIC_04",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "In an elite academic training squad of 5 students (A, B, C, D, and E), A scored higher than B but lower than C. D scored higher than C but is not the top ranker. If E is the overall top scorer, which student holds the exact median (middle) performance rank?",
+    "options": ["A) A", "B) B", "C) C", "D) D"],
+    "correct": "C",
+    "hint": "Map the strict rank positions linearly using inequalities based on the prompt's rules: $E > D > C > A > B$."
+  },
+  {
+    "id": "W01_LOGIC_05",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Choose the configuration pairing that mirrors the relationship shown here: Light : Refraction :: Sound : ?",
+    "options": ["A) Vacuum", "B) Echo", "C) Pitch", "D) Decibel"],
+    "correct": "B",
+    "hint": "Identify the logical link: Refraction is a physical wave phenomenon experienced by light as it shifts mediums. What is a core wave phenomenon experienced by sound when it encounters a solid boundary?"
+  }
+  {
+    "id": "W01_PHYS_06",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A satellite tracking station plots a Distance-Time graph for two sounding rockets, booster A and booster B. The plot for booster A is a steep straight line sloping upward at $60^\\circ$ relative to the time axis, while booster B slopes upward at $30^\\circ$. What is the exact mathematical ratio of the velocity of booster A to booster B ($v_A : v_B$)?",
+    "options": ["A) $1 : 3$", "B) $3 : 1$", "C) $2 : 1$", "D) $\\sqrt{3} : 1$"],
+    "correct": "B",
+    "hint": "Recall that the slope of a Distance-Time graph yields velocity. The slope of a line at an angle $\\theta$ is mathematically given by $\\tan(\\theta)$. Note that $\\tan(60^\\circ) = \\sqrt{3}$ and $\\tan(30^\\circ) = 1/\\sqrt{3}$."
+  },
+  {
+    "id": "W01_PHYS_07",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "An astronaut drops a solid $500\\text{ g}$ copper calibration brick at $100^\\circ\\text{C}$ into an insulated container holding $500\\text{ g}$ of water at $20^\\circ\\text{C}$. If the specific heat capacity of water is significantly higher than that of copper, where will the final equilibrium temperature of the mixture settle?",
+    "options": ["A) Exactly at the mathematical midpoint of $60^\\circ\\text{C}$", "B) Bounded tightly between $20^\\circ\\text{C}$ and $60^\\circ\\text{C}$", "C) Bounded tightly between $60^\\circ\\text{C}$ and $100^\\circ\\text{C}$", "D) It drops below $20^\\circ\\text{C}$ due to structural vacuum loss"],
+    "correct": "B",
+    "hint": "Use the heat exchange balance: $Q_{\\text{lost}} = Q_{\\text{gained}}$. Since $m_1c_1\\Delta T_1 = m_2c_2\\Delta T_2$ and $c_{\\text{water}} > c_{\\text{copper}}$, the water's temperature change will be much smaller than the copper's."
+  },
+  {
+    "id": "W01_PHYS_08",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A deep-space habitat module uses a bimetallic strip made of brass and iron to trigger an emergency cooling valve. If brass expands significantly more than iron when exposed to high temperature surges, which way will the composite strip bend when a thermal spike occurs?",
+    "options": ["A) It remains perfectly straight but compresses uniformly", "B) It bends into a curve with the brass layer on the outside (convex side)", "C) It bends into a curve with the iron layer on the outside (convex side)", "D) It twists into a tight spiral perpendicular to the structural frame"],
+    "correct": "B",
+    "hint": "The metal with the higher linear expansion coefficient must stretch longer. To accommodate its extra length while remaining bonded, it forms the outer curvature of the arc."
+  },
+  {
+    "id": "W01_PHYS_09",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "A digital pendulum mechanism designed for a Martian lander ticks at a rate directly tied to the local acceleration due to gravity ($g$). If Mars has roughly $38\\%$ of Earth's surface gravity, how will the pendulum clock's timekeeping behave if deployed with its Earth calibration settings?",
+    "options": ["A) It will tick much faster, running ahead of time", "B) It will tick much slower, losing time significantly", "C) It will maintain perfect synchronous timing due to inertia", "D) It will instantly lock at its geometric amplitude midpoint"],
+    "correct": "B",
+    "hint": "A weaker gravitational pull exerts less restoring force on the pendulum bob. This lengthens the time required to complete a single full swing."
+  },
+  {
+    "id": "W01_PHYS_10",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An engineer coats a satellite component in a specialized material that behaves as a perfect blackbody radiator. If this component is currently resting at an absolute temperature of $T$, what happens to its net thermal power emission rate if its surface area is precisely halved while its temperature is doubled?",
+    "options": ["A) The emission rate increases by a factor of 8", "B) The emission rate increases by a factor of 16", "C) The emission rate increases by a factor of 4", "D) The emission rate scales down to half its value"],
+    "correct": "A",
+    "hint": "According to the Stefan-Boltzmann expression, total radiated power is proportional to both surface area and temperature raised to the fourth power: $P = A \\cdot \\sigma \\cdot T^4$."
+  },
+  {
+    "id": "W01_MATH_06",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Consider three non-zero integers $p$, $q$, and $r$ that satisfy the strict inequality condition $p < 0 < q < r$. Which of the following derived mathematical products must yield a value that is strictly negative?",
+    "options": ["A) $p \\cdot (q - r)$", "B) $q \\cdot (p - r)$", "C) $r \\cdot (q - p)$", "D) $p^2 \\cdot q \\cdot r$"],
+    "correct": "B",
+    "hint": "Test the signs of the terms: $p$ is negative, so subtracting any positive number $r$ from it forces $(p - r)$ to be deeply negative. Multiplying that by a positive $q$ yields a negative result."
+  },
+  {
+    "id": "W01_MATH_07",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An orbital trajectory algorithm uses the nested integer expression: $x = -2 \\cdot [ -5 - 3 \\cdot (4 - 7) ]$. Compute the absolute mathematical value of $x$.",
+    "options": ["A) -8", "B) 8", "C) -28", "D) 28"],
+    "correct": "A",
+    "hint": "Apply BODMAS/PEMDAS order of operations strictly. Solve the innermost parenthesis $(4-7)$ first, multiply by $-3$, and work your way out."
+  },
+  {
+    "id": "W01_MATH_08",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A subterranean exploration drill drops down from an initial platform height of $15\\text{ meters}$ above sea level. It drills downward at a constant uniform speed of $3\\text{ meters}$ per minute. What integer coordinate represents its position relative to sea level ($0\\text{m}$) after exactly $20\\text{ minutes}$ of operation?",
+    "options": ["A) $-60\\text{ meters}$", "B) $-45\\text{ meters}$", "C) $-75\\text{ meters}$", "D) $45\\text{ meters}$"],
+    "correct": "B",
+    "hint": "Calculate the total downward distance drilled ($3 \\times 20$) and subtract this value from your starting elevation of $+15$."
+  },
+  {
+    "id": "W01_MATH_09",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "If $x \\Delta y$ is a custom programmatic operator defined across all real integers as $x \\Delta y = (x \\cdot y) - (x + y)$, evaluate the value of the nested sequence: $(-3) \\Delta 4$.",
+    "options": ["A) -11", "B) -13", "C) -12", "D) -1"],
+    "correct": "B",
+    "hint": "Substitute the negative integer parameters directly into the operational pattern: $[(-3) \\cdot 4] - [(-3) + 4]$ and simplify."
+  },
+  {
+    "id": "W01_MATH_10",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A digital bank ledger processes five consecutive automated transaction logs on an account: $+500$, $-1200$, $+350$, $-100$, and $+200$. If the account balance sat at $-150$ before this log sequence started, what is the final balance integer?",
+    "options": ["A) $-400$", "B) $-250$", "C) $-300$", "D) $+100$"],
+    "correct": "A",
+    "hint": "Sum the sequence of positive and negative updates, then add the total variation vector to the initial baseline deficit value of $-150$."
+  },
+  {
+    "id": "W01_CHEM_06",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A lab technician drips a concentrated acid sample onto a structural block of solid Marble (Calcium Carbonate). She notices a rapid bubbling reaction. Which formula accurately describes the identity of the salt compound left behind in the fluid matrix if the acid used was Hydrochloric Acid ($HCl$)?",
+    "options": ["A) $CaCl_2$", "B) $CaSO_4$", "C) $CaO$", "D) $NaCl$"],
+    "correct": "A",
+    "hint": "Metal carbonates reacting with Hydrochloric Acid yield Calcium Chloride salt, water, and liberating carbon dioxide gas."
+  },
+  {
+    "id": "W01_CHEM_07",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "A student accidentally spills a small vial of cleaning fluid containing Sodium Hydroxide onto his hand, causing a slippery, soapy sensation and mild irritation. Which household substance could safely be applied to neutralize the spill without causing a secondary chemical burn?",
+    "options": ["A) Concentrated Nitric Acid", "B) Dilute Acetic Acid (Vinegar)", "C) Bleach compound paste", "D) Potassium Hydroxide solution"],
+    "correct": "B",
+    "hint": "Sodium Hydroxide is a highly corrosive strong base. To neutralize it safely on living tissue, you must apply a non-toxic mild acid."
+  },
+  {
+    "id": "W01_CHEM_08",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "You drop a tiny scrap of metallic Magnesium into a beaker filled with dilute Sulphuric Acid. You collect the escaping clear gas in a flipped test tube and introduce a lit match to the mouth. What diagnostic observation will occur?",
+    "options": ["A) The flame is immediately smothered with zero sound", "B) The gas ignites vigorously with a characteristic sharp 'pop' sound", "C) The match burns with a blinding bright yellow soot flame", "D) The gas turns dark purple and begins to condense into liquid"],
+    "correct": "B",
+    "hint": "Metals reacting with dilute mineral acids displace hydrogen ions, liberating Hydrogen gas ($H_2$). Recall the signature combustion test for Hydrogen."
+  },
+  {
+    "id": "W01_CHEM_09",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "Why is an antacid tablet containing Magnesium Hydroxide or Aluminum Hydroxide commonly prescribed by medical practitioners to patients suffering from acute hyperacidity and stomach distress?",
+    "options": ["A) The tablet contains complex enzymes that accelerate the cellular breakdown of raw sugars", "B) The basic properties of the hydroxide compounds react with excess stomach Hydrochloric acid to create a neutral salt", "C) Hydroxides lower the total fluid volume of the stomach via condensation loops", "D) The molecules line the tissue walls to block normal absorption pathways"],
+    "correct": "B",
+    "hint": "Stomach fluid is naturally highly acidic due to $HCl$. Hydroxides act as bases, countering the excess acid via a classic neutralization path."
+  },
+  {
+    "id": "W01_CHEM_10",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A crop scientist tests a patch of agricultural soil and finds that its pH is far too alkaline, which is actively stunting the root progression of the target crops. What field management strategy should be implemented to balance the soil?",
+    "options": ["A) Apply heavy additions of slaked lime (Calcium Hydroxide)", "B) Mix in decaying organic matter (compost manure)", "C) Flush the field with an aqueous solution of Sodium Carbonate", "D) Treat the area with crushed chalk powder blocks"],
+    "correct": "B",
+    "hint": "Decaying organic matter releases mild organic acids during decomposition, which work naturally to balance an overly alkaline environment."
+  },
+  {
+    "id": "W01_BIOL_06",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "An experimental botany setup grows a tomato plant inside an airtight greenhouse where the air contains a high concentration of an enzyme inhibitor that completely blocks the function of guard cells around the stomata. What downstream effect will be measured in the plant's vascular systems?",
+    "options": ["A) Roots will double their mineral intake velocity", "B) The transpiration stream pulling water from roots to leaves will collapse", "C) Cellular respiration will shift exclusively to the anaerobic pathway", "D) Leaf cells will expand and burst due to excess turgor fluid"],
+    "correct": "B",
+    "hint": "Stomata regulation controls transpiration vapor release. If stomata remain locked shut, the capillary pull that drives water transport stalls."
+  },
+  {
+    "id": "W01_BIOL_07",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "An insectivorous pitcher plant ($Nepenthes$) possesses green leaves containing chlorophyll and carries out regular photosynthesis. Why has it evolved specialized trap mechanisms to capture and digest insects?",
+    "options": ["A) It lacks the capability to synthesize basic carbohydrate structures from sunlight", "B) It grows in nitrogen-deficient soils and must extract nitrogen from animal proteins", "C) Insects supply the vital water molecules needed for root transport mechanisms", "D) Digested proteins are used directly as fuel for anaerobic cellular pathways"],
+    "correct": "B",
+    "hint": "Insectivorous adaptations typically emerge in swampy, highly acidic waterlogged soils where standard nitrate nutrients are scarce."
+  },
+  {
+    "id": "W01_BIOL_08",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A cell biologist isolates the mitochondria from a culture of human liver cells and places them in a nutrient broth. If she introduces glucose directly into the beaker, she notices that no cellular respiration occurs. However, if she inputs Pyruvic Acid instead, respiration activates immediately. Deduce the explanation for this observation.",
+    "options": ["A) Glucose molecules are too large to pass through the beaker filter membrane", "B) The initial breakdown of glucose into pyruvic acid occurs outside the mitochondria in the cytoplasm", "C) Mitochondria possess unique structural walls that decompose glucose into toxic lactic acid", "D) Pyruvic acid acts as an inorganic catalyst that triggers glucose photosynthesis"],
+    "correct": "B",
+    "hint": "Cellular respiration is a multi-step sequence. The first stage (Glycolysis) splits glucose into pyruvate within the cell cytoplasm before it ever reaches the mitochondria."
+  },
+  {
+    "id": "W01_BIOL_09",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "A student seals a fresh green leaf inside a flask containing a solution of Potassium Hydroxide ($KOH$) and exposes the system to bright light for several hours. When she performs a standard iodine starch test on this leaf later, it fails to turn blue-black. What resource limitation caused this result?",
+    "options": ["A) Potassium Hydroxide blocked light absorption through the leaf surface", "B) The $KOH$ solution absorbed all available Carbon Dioxide gas inside the flask, preventing starch synthesis", "C) The leaf lacked sufficient water molecules to execute photolysis loops", "D) Excess oxygen accumulation poisoned the chlorophyll pigments"],
+    "correct": "B",
+    "hint": "Potassium Hydroxide is a highly effective chemical scrubber for Carbon Dioxide. Think about what happens to photosynthesis when $CO_2$ drops to zero."
+  },
+  {
+    "id": "W01_BIOL_10",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "Which statement accurately describes the distinct directional routing of vascular transport systems within a complex woody perennial plant?",
+    "options": ["A) Xylem drives a bidirectional loop of organic food, while Phloem drives an upward vector of water", "B) Xylem drives a unidirectional upward stream of water and minerals, while Phloem provides a bidirectional distribution of synthesized food", "C) Both systems operate in a strictly unidirectional downward vector from leaf tip to root", "D) Phloem transport is entirely driven by environmental transpiration pull vectors"],
+    "correct": "B",
+    "hint": "Water enters exclusively through the roots and must travel upward to the crown. Synthesized starches originate in the leaves but must reach all growing points and storage tissues across the plant."
+  },
+  {
+    "id": "W01_LOGIC_06",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "In a secure space terminal comms line, the phrase 'SPACE SHIP' is written in a substitution cipher as '41135 7896'. Decode the index positions to determine the numeric string corresponding to 'PACE MAP' under the exact same system rules.",
+    "options": ["A) 1135 126", "B) 1135 716", "C) 2115 716", "D) 1135 916"],
+    "correct": "B",
+    "hint": "Extract the absolute numeric mappings for each letter from the prompt string: S=4, P=1, A=1, C=3, E=5, S=7, H=8, I=9, P=6. Notice how recurring letters behave."
+  },
+  {
+    "id": "W01_LOGIC_07",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "A lunar crawler begins at Base Station Zero. It drives $5\\text{ kilometers}$ due East, turns right $90^\\circ$ and proceeds for $12\\text{ kilometers}$, and finally makes a sharp left turn to drive another $4\\text{ kilometers}$ East. What is the straight-line displacement distance between the crawler's current position and Base Station Zero?",
+    "options": ["A) $21\\text{ kilometers}$", "B) $13\\text{ kilometers}$", "C) $15\\text{ kilometers}$", "D) $17\\text{ kilometers}$"],
+    "correct": "C",
+    "hint": "Combine your directional offset vectors: total horizontal movement is $5+4=9\\text{ km}$ East, and total vertical movement is $12\\text{ km}$ South. Use the Pythagorean theorem."
+  },
+  {
+    "id": "W01_LOGIC_08",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Examine the step progression sequence and solve for the missing bracketed value: 2, 9, 28, (?), 126, 217.",
+    "options": ["A) 64", "B) 65", "C) 56", "D) 72"],
+    "correct": "B",
+    "hint": "Analyze the structural construction of each element in the series relative to standard cube numbers: $1^3+1, 2^3+1, 3^3+1 \\dots$ Determine the next index."
+  },
+  {
+    "id": "W01_LOGIC_09",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Six satellite tracking dishes (P, Q, R, S, T, and U) are aligned in a straight tracking frame row. Q is placed exactly between U and S. P is situated second from the far right end. T is located immediately to the left of R. If U sits at the far left edge of the alignment row, which dish occupies the position second from the left?",
+    "options": ["A) S", "B) T", "C) Q", "D) R"],
+    "correct": "C",
+    "hint": "Build your alignment line systematically starting from the known anchors: U is at position 1. Since Q sits between U and S, Q must occupy position 2."
+  },
+  {
+    "id": "W01_LOGIC_10",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Select the option that mirrors the exact core analytical relationship established here: Vertex : Pyramid :: ? : ?",
+    "options": ["A) Circumference : Circle", "B) Spoke : Wheel", "C) Atom : Molecule", "D) Crest : Wave"],
+    "correct": "D",
+    "hint": "Identify the relationship: A vertex is the definitive peak point of a geometric pyramid. Look for an option that represents the structural peak of a physical phenomenon."
+  }
+  {
+    "id": "W01_PHYS_11",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A satellite instrument box uses two parallel metal plates to conduct heat away from an internal sensor. Plate A is $2\\text{ mm}$ thick, while Plate B is $6\\text{ mm}$ thick. If both plates are made of the exact same copper alloy and share identical surface areas, what is the ratio of the thermal conductivity rate of Plate A to Plate B ($R_A : R_B$) under the exact same temperature difference?",
+    "options": ["A) $1 : 3$", "B) $3 : 1$", "C) $1 : 9$", "D) $1 : 1$"],
+    "correct": "B",
+    "hint": "Recall the fundamental equation for rate of heat conduction: $Q/t = (k \\cdot A \\cdot \\Delta T) / d$. Since the thickness ($d$) is inversely proportional to the conduction rate, the thinner plate will conduct heat faster."
+  },
+  {
+    "id": "W01_PHYS_12",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "An observer matches a high-speed projectile using a digital radar gun. The radar registers that the projectile covers a distance of $180\\text{ meters}$ in a span of exactly $4.5\\text{ seconds}$. What is the calculated average velocity of the object, and does it represent uniform motion if it tracks perfectly linearly?",
+    "options": ["A) $40\\text{ m/s}$, Uniform Motion", "B) $45\\text{ m/s}$, Non-Uniform Motion", "C) $40\\text{ m/s}$, Non-Uniform Motion", "D) $810\\text{ m/s}$, Uniform Motion"],
+    "correct": "A",
+    "hint": "Velocity is derived from the standard quotient formulation: $\\text{Distance} / \\text{Time}$. If an object covers equal distances in equal intervals of time along a straight vector, its motion is uniform."
+  },
+  {
+    "id": "W01_PHYS_13",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A thermal scientist wants to construct a reliable liquid-in-glass thermometer for tracking sub-zero temperatures down to $-50^\\circ\\text{C}$ on an atmospheric sounding balloon. Which working fluid must be selected for this payload?",
+    "options": ["A) Liquid Mercury, because it expands uniformly at high temperatures", "B) Pure distilled Water, because it has a high specific heat capacity", "C) Pure Alcohol, because its freezing threshold sits well below $-100^\\circ\\text{C}$", "D) Concentrated Sulphuric Acid, because it does not boil easily"],
+    "correct": "C",
+    "hint": "Mercury freezes at approximately $-39^\\circ\\text{C}$, rendering it solid and useless before the balloon reaches the target altitude. Think about which liquid retains its fluid property under intense cold."
+  },
+  {
+    "id": "W01_PHYS_14",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do hot air balloons rise upward into the atmosphere when the internal gas burner is ignited?",
+    "options": ["A) The heat adds extra mass to the gas atoms inside the envelope", "B) The air expands when heated, dropping its density relative to the surrounding cooler atmospheric air and generating buoyant force", "C) Thermal radiation creates an electromagnetic field that repels gravity", "D) Conduction converts air molecules into light energy packets"],
+    "correct": "B",
+    "hint": "Recall Charles's law or general thermal expansion properties: heating a gas causes its molecules to spread out, increasing its volume while lowering its density per unit area."
+  },
+  {
+    "id": "W01_PHYS_15",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A solar observatory satellite tracks thermal radiation from two distinct stellar regions. Region Alpha emits radiation with a peak wavelength in the ultraviolet spectrum, while Region Beta emits peak radiation in the infrared spectrum. Which region has a higher surface temperature, and why?",
+    "options": ["A) Region Beta, because infrared rays carry more thermal energy molecules", "B) Region Alpha, because shorter wavelengths correspond to higher absolute thermal energy profiles", "C) Both share the exact same temperature since both are stellar bodies", "D) Neither, stellar heat cannot travel through a vacuum layer via waves"],
+    "correct": "B",
+    "hint": "Review Wien's Displacement Law: the peak wavelength of radiation emitted by a body is inversely proportional to its absolute temperature ($\\lambda_{\\text{max}} \\propto 1/T$)."
+  },
+  {
+    "id": "W01_MATH_11",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Let $x$ and $y$ be two distinct integers such that $x \\cdot y = -24$ and their absolute difference $|x - y|$ is minimized. What is the value of the algebraic summation $x + y$?",
+    "options": ["A) -10", "B) 10", "C) -2", "D) Either 2 or -2"],
+    "correct": "D",
+    "hint": "List out the factor pairs of $-24$: $(1, -24), (2, -12), (3, -8), (4, -6)$ along with their reverses. Identify which pair sits closest together on a standard number line vector."
+  },
+  {
+    "id": "W01_MATH_12",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Evaluate the value of the expressions: $(-1)^{2026} + (-1)^{2027}$.",
+    "options": ["A) 2", "B) -2", "C) 0", "D) -1"],
+    "correct": "C",
+    "hint": "Recall that a negative integer raised to an even exponential power yields a positive value, while a negative integer raised to an odd power retains its negative sign."
+  },
+  {
+    "id": "W01_MATH_13",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A high-altitude scientific glider starts at an elevation of $1200\\text{ meters}$. It hits a violent downdraft loop, causing it to descend at a uniform rate of $45\\text{ meters}$ per minute for exactly $15\\text{ minutes}$, followed by a thermal lift that raises it by $250\\text{ meters}$. What is its final altitude coordinate?",
+    "options": ["A) $775\\text{ meters}$", "B) $525\\text{ meters}$", "C) $675\\text{ meters}$", "D) $925\\text{ meters}$"],
+    "correct": "A",
+    "hint": "Formulate your tracking matrix equation: $1200 - (45 \\cdot 15) + 250$. Execute calculations systematically using proper sign logic."
+  },
+  {
+    "id": "W01_MATH_14",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "If we discover a set of integers bounded by the rule $-5 \\le x < 3$, how many negative integers are contained within this solution array?",
+    "options": ["A) 5", "B) 4", "C) 6", "D) 8"],
+    "correct": "A",
+    "hint": "List the elements starting from the lower bound up to zero: $-5, -4, -3, -2, -1$. Zero is neither a negative nor a positive integer structure."
+  },
+  {
+    "id": "W01_MATH_15",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "An automated deep-sea thermal probe records temperature shifts at a depth of $3\\text{ kilometers}$. The logs reveal a baseline change pattern: it drops by $3^\\circ\\text{C}$ on Monday, rises by $7^\\circ\\text{C}$ on Tuesday, and drops by $11^\\circ\\text{C}$ on Wednesday. What is the net integer variance across these three tracking intervals?",
+    "options": ["A) $-7^\\circ\\text{C}$", "B) $-15^\\circ\\text{C}$", "C) $+3^\\circ\\text{C}$", "D) $-1^\\circ\\text{C}$"],
+    "correct": "A",
+    "hint": "Convert the word problems into raw integer expressions: $(-3) + (+7) + (-11)$. Sum the values step-by-step."
+  },
+  {
+    "id": "W01_CHEM_11",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A solution of Tartaric Acid is tested using a fresh extract of Turmeric paste indicator. What color shift will be recorded by the observation terminal?",
+    "options": ["A) The yellow paste transforms into a dark reddish-brown hue", "B) The yellow paste remains yellow with zero color transformation", "C) The paste shifts to a deep blue validation string", "D) The mixture turns perfectly clear and colorless"],
+    "correct": "B",
+    "hint": "Turmeric is a natural indicator that undergoes a distinctive color shift to reddish-brown in basic solutions, but exhibits no change when mixed with acids."
+  },
+  {
+    "id": "W01_CHEM_12",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "A student drops a piece of clean Zinc metal into a beaker of dilute Hydrochloric Acid. She observes gas evolution and wants to confirm that the reaction creates a salt. What is the chemical name of the compound remaining dissolved in the beaker?",
+    "options": ["A) Zinc Oxide", "B) Zinc Chloride", "C) Zinc Sulphate", "D) Sodium Chloride"],
+    "correct": "B",
+    "hint": "When a reactive metal replaces hydrogen in Hydrochloric Acid ($HCl$), the resulting compound is a metal chloride salt."
+  },
+  {
+    "id": "W01_CHEM_13",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "You have an unknown solution that turns methyl orange indicator yellow and causes phenolphthalein to turn bright pink. What will happen if you drip this solution onto a piece of blue litmus paper?",
+    "options": ["A) The blue litmus paper will instantly flash bright red", "B) The blue litmus paper will turn colorless", "C) The blue litmus paper will remain blue with no color change", "D) The paper will catch fire due to an exothermic decomposition reaction"],
+    "correct": "C",
+    "hint": "The indicator behavior (pink phenolphthalein, yellow methyl orange) indicates a basic solution. Bases do not turn blue litmus paper red."
+  },
+  {
+    "id": "W01_CHEM_14",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do painters and construction engineers apply a layer of zinc or basic primer compounds to iron structural frames before exposing them to environmental weather conditions?",
+    "options": ["A) To increase the acidity of the iron surface molecules", "B) To neutralize the basic tracking components in rain water", "C) To create a protective barrier that prevents oxygen and moisture from causing oxidation (rusting)", "D) To trigger a safe displacement reaction that hardens the metal core"],
+    "correct": "C",
+    "hint": "Rusting requires concurrent exposure to moisture ($H_2O$) and Oxygen ($O_2$). Primers isolate the raw iron from these atmospheric reactants."
+  },
+  {
+    "id": "W01_CHEM_15",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A flask contains a mixture of Ammonium Hydroxide and water. A student carefully neutralizes this solution by adding an exact stoichiometric equivalent of dilute Hydrochloric Acid. Which of the following pairs represents the salt and liquid products formed?",
+    "options": ["A) Ammonium Chloride + Water", "B) Sodium Chloride + Hydrogen Gas", "C) Ammonium Carbonate + Carbon Dioxide", "D) Nitrogen Gas + Water Matrix"],
+    "correct": "A",
+    "hint": "Neutralization follows the rule: $\\text{Acid} + \\text{Base} \\rightarrow \\text{Salt} + \\text{Water}$. Match the ammonium cation from the base with the chloride anion from the acid."
+  },
+  {
+    "id": "W01_BIOL_11",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A marine biologist tests a species of phytoplankton that resides at extreme ocean depths where only blue-green light wavelengths penetrate. Which adaptation would most effectively maximize its light absorption for photosynthesis?",
+    "options": ["A) Eliminating chlorophyll pigments to rely purely on root conduction", "B) Developing high concentrations of accessory pigments (like phycobilins) that absorb blue-green light wavelengths", "C) Shifting exclusively to anaerobic respiration via ethanol loops", "D) Locking stomatal pores during daylight hours to prevent thermal radiation damage"],
+    "correct": "B",
+    "hint": "Standard green chlorophyll primarily absorbs red and blue light. In environments where light is filtered by deep water columns, specialized accessory pigments capture the available wavelengths and transfer the energy to the reaction centers."
+  },
+  {
+    "id": "W01_BIOL_12",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "A student isolates a sample of cells from a plant leaf and observes them under a high-power microscope. She notices specialized pairs of kidney-shaped cells surrounding small openings. What are these structural cell pairs called, and what is their primary function?",
+    "options": ["A) Xylem cells, responsible for water transport loops", "B) Guard cells, responsible for regulating the opening and closing of stomata", "C) Phloem cells, responsible for bidirectional starch distribution", "D) Root hairs, responsible for mineral tracking inputs"],
+    "correct": "B",
+    "hint": "These cells use changes in internal turgor pressure to expand or contract, modifying the aperture size of the stomatal pore to regulate gas exchange and water loss."
+  },
+  {
+    "id": "W01_BIOL_13",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "An agricultural scientist cuts a ring of bark completely around the lower stem of a healthy hibiscus plant, removing the phloem layer while leaving the deeper xylem vessels intact. What will be the observed physiological consequence over the following weeks?",
+    "options": ["A) Water transport to the leaves stops instantly, causing immediate wilting", "B) Synthesized food carbohydrates cannot reach the roots, causing the root system to starve and fail", "C) The plant increases its transpiration rate to compensate for structural bark loss", "D) Mitosis increases exponentially below the cut region, creating new leaves"],
+    "correct": "B",
+    "hint": "Xylem is located deep within the wooden core and handles upward water transport. Phloem resides in the inner bark layer and transports nutrients downward to fuel root cell respiration."
+  },
+  {
+    "id": "W01_BIOL_14",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do human muscle cells experience cramps during intense, unaccustomed physical exercise like sprinting or heavy lifting?",
+    "options": ["A) Rapid accumulation of Carbon Dioxide gas in the joint spaces", "B) High levels of Lactic Acid produced due to partial breakdown of glucose under anaerobic conditions", "C) Complete structural breakdown of cell walls due to friction", "D) Excess water accumulation triggering intracellular cell lysis"],
+    "correct": "B",
+    "hint": "When the energy demand outpaces the cardiovascular system's oxygen supply, muscle tissue shifts to an anaerobic pathway that yields lactic acid as a localized byproduct."
+  },
+  {
+    "id": "W01_BIOL_15",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A setup exposes two identical green plants to identical environmental factors, except Plant 1 is kept under a constant stream of pure Oxygen gas while Plant 2 is kept in an atmosphere with normal Carbon Dioxide levels. What will be the measured outcome regarding starch production?",
+    "options": ["A) Plant 1 will synthesize significantly more starch than Plant 2", "B) Plant 2 will synthesize starch normally, while Plant 1 will fail to produce starch", "C) Both plants will cease starch production due to gas concentrations", "D) Plant 1 will shift to root-based heterotrophic ingestion paths"],
+    "correct": "B",
+    "hint": "Photosynthesis requires Carbon Dioxide as a core carbon sourcing block to assemble glucose molecules ($C_6H_{12}O_6$). Pure oxygen provides no carbon substrate."
+  },
+  {
+    "id": "W01_LOGIC_11",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Introducing a guest at a space conference, Commander Alpha states: 'This scientist is the only son of the wife of my father's unique son.' How is Commander Alpha related to the guest if Alpha is a male operator?",
+    "options": ["A) Brother", "B) Nephew", "C) Father", "D) Uncle"],
+    "correct": "C",
+    "hint": "Deconstruct the relationship chain backward: 'My father's unique (only) son' points directly to Commander Alpha himself. Now substitute that back into the phrase."
+  },
+  {
+    "id": "W01_LOGIC_12",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Find the missing term in the sequence: AZ, CX, EV, GT, ?",
+    "options": ["A) HS", "B) IR", "C) KP", "&D) JQ"],
+    "correct": "B",
+    "hint": "Track both letter positions simultaneously: the first letters move forward by two steps ($A \\rightarrow C \\rightarrow E \\rightarrow G$), while the second letters move backward by two steps ($Z \\rightarrow X \\rightarrow V \\rightarrow T$)."
+  },
+  {
+    "id": "W01_LOGIC_13",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "A tracking radar rotates $45^\\circ$ clockwise from an initial North orientation vector. It then executes a $135^\\circ$ counter-clockwise rotation, followed by a final $180^\\circ$ clockwise turn. What is the final pointing direction of the radar dish?",
+    "options": ["A) East", "B) West", "C) Northeast", "D) Southeast"],
+    "correct": "A",
+    "hint": "Sum the angular movements algebraically: treat clockwise as positive and counter-clockwise as negative ($+45 - 135 + 180$). Determine the net angular offset from North."
+  },
+  {
+    "id": "W01_LOGIC_14",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Examine the matrix grid relationship and solve for the missing numeric value: [2, 3 -> 13], [4, 1 -> 17], [5, 2 -> ?].",
+    "options": ["A) 10", "B) 29", "C) 27", "D) 34"],
+    "correct": "B",
+    "hint": "Identify the mathematical pattern linking the inputs to the output: square both input integers and sum the results together ($2^2 + 3^2 = 4 + 9 = 13$)."
+  },
+  {
+    "id": "W01_LOGIC_15",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Five satellite relays (A, B, C, D, and E) transmit data sequentially. A is faster than B but slower than C. D is slower than E but faster than C. Which relay is the absolute slowest in data processing speed?",
+    "options": ["A) A", "B) B", "C) C", "D) D"],
+    "correct": "B",
+    "hint": "Translate the statements into clear rank inequalities: $E > D > C > A > B$. Locate the element at the bottom of the chain."
+  },
+    {
+    "id": "W01_PHYS_16",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A sounding rocket fires its engines and travels up a straight vertical trajectory. It covers the first $60\\text{ kilometers}$ at a uniform speed of $2\\text{ km/min}$ and the next $60\\text{ kilometers}$ at a uniform speed of $3\\text{ km/min}$. What is the calculated average speed of the rocket across its entire $120\\text{ km}$ flight path?",
+    "options": ["A) $2.5\\text{ km/min}$", "B) $2.4\\text{ km/min}$", "C) $2.6\\text{ km/min}$", "D) $5.0\\text{ km/min}$"],
+    "correct": "B",
+    "hint": "Caution: Average speed is not the simple arithmetic mean of the two speeds. You must calculate the total distance divided by the total time elapsed across both legs of the journey: $\\text{Total Time} = t_1 + t_2$."
+  },
+  {
+    "id": "W01_PHYS_17",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "An engineer tests four different materials to choose a structural shield for a satellite's battery compartment. Material W conducts $100\\text{ Joules}$ of heat in 10 seconds. Material X conducts $50\\text{ Joules}$ in 2 seconds. Material Y conducts $200\\text{ Joules}$ in 40 seconds. Material Z conducts $10\\text{ Joules}$ in 5 seconds. Which material is the most effective thermal insulator?",
+    "options": ["A) Material W", "B) Material X", "C) Material Y", "D) Material Z"],
+    "correct": "D",
+    "hint": "An effective thermal insulator conducts the least amount of heat per second. Calculate the heat conduction rate ($\\text{Joules} / \\text{Seconds}$) for each material option."
+  },
+  {
+    "id": "W01_PHYS_18",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A digital thermometer probe is calibrated using two fixed points: the melting point of pure ice is assigned a value of $-10^\\circ\\text{X}$ and the boiling point of water is assigned a value of $+110^\\circ\\text{X}$. If the probe measures a chemical solution at exactly $30^\\circ\\text{C}$ on a standard Celsius scale, what integer value will it display on the custom $^\\circ\\text{X}$ scale?",
+    "options": ["A) $20^\\circ\\text{X}$", "B) $26^\\circ\\text{X}$", "C) $36^\\circ\\text{X}$", "D) $40^\\circ\\text{X}$"],
+    "correct": "B",
+    "hint": "Map the ratio of the interval scales. The custom scale has a total span of $120\\text{ units}$ ($110 - (-10)$) for every $100\\text{ units}$ on the Celsius scale. Use the proportion formula: $(C - 0)/100 = (X - (-10))/120$."
+  },
+  {
+    "id": "W01_PHYS_19",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do mountain climbers carry portable heating packs and thick multi-layered clothing when ascending high altitudes, even on perfectly cloudless, sunny days?",
+    "options": ["A) Atmospheric density decreases with altitude, reducing the air's capacity to trap heat radiated from the Earth's surface", "B) Solar radiation changes into mass particles that absorb heat energy", "C) High-altitude gravity blocks thermal convection loops entirely", "D) Cloudless skies trigger a chemical inversion that turns oxygen into ice molecules"],
+    "correct": "A",
+    "hint": "The atmosphere acts like an insulating blanket. Thinner air means fewer gas molecules are available to absorb and hold onto thermal energy, leading to low ambient temperatures."
+  },
+  {
+    "id": "W01_PHYS_20",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Two solid cubes made of the exact same aluminum alloy are exposed to direct sunlight. Cube A has side lengths of $1\\text{ cm}$, while Cube B has side lengths of $2\\text{ cm}$. Assuming both cubes absorb solar radiation uniformly across their top surfaces, how does the initial rate of temperature rise for Cube A compare to Cube B? ($\\Delta T_A / \\Delta T_B$)",
+    "options": ["A) Cube A warms up twice as fast as Cube B", "B) Cube A warms up at four times the rate of Cube B", "C) Cube A and Cube B warm up at the exact same rate", "D) Cube B warms up twice as fast as Cube A"],
+    "correct": "A",
+    "hint": "The thermal energy absorbed depends on the top surface area ($s^2$), while the mass that needs to be warmed depends on total volume ($s^3$). Therefore, the temperature rise is inversely proportional to the side length ($1/s$)."
+  },
+  {
+    "id": "W01_MATH_16",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An elegant integer pattern satisfies the condition: $a_1 = -1$, and for every step after, $a_{n+1} = (a_n \\cdot -2) + 3$. Compute the absolute tracking value of the fourth term ($a_4$) in this operational sequence.",
+    "options": ["A) 5", "B) -7", "C) 13", "D) -23"],
+    "correct": "D",
+    "hint": "Calculate the terms sequentially: $a_2 = (-1 \\cdot -2) + 3 = 5$. Use this value to compute $a_3$, and continue the pattern to find $a_4$."
+  },
+  {
+    "id": "W01_MATH_17",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Let $m$ be an integer selected from the closed set $[-4, -3, -2, -1, 0, 1, 2]$. What is the probability that the absolute configuration operation $|m - 1| \\le 2$ holds true?",
+    "options": ["A) $3/7$", "B) $4/7$", "C) $5/7$", "D) $2/7$"],
+    "correct": "B",
+    "hint": "Substitute each individual integer from the set for $m$, calculate the absolute difference, and count how many values yield a result that is less than or equal to 2."
+  },
+  {
+    "id": "W01_MATH_18",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A tracking radar tracks an autonomous submarine dipping down to an initial coordinate of $-240\\text{ meters}$ below sea level. The submarine executes an emergency ascent vector, climbing up a total of $+180\\text{ meters}$, followed by a diving leg that takes it down another $-90\\text{ meters}$. What is its final vertical position vector relative to sea level?",
+    "options": ["A) $-150\\text{ meters}$", "B) $-330\\text{ meters}$", "C) $-120\\text{ meters}$", "D) $-210\\text{ meters}$"],
+    "correct": "A",
+    "hint": "Set up your integer summation equation systematically: $(-240) + (+180) + (-90)$. Sum the adjustments step-by-step."
+  },
+  {
+    "id": "W01_MATH_19",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "What is the net product value if you multiply all the odd integer values that satisfy the strict inequality condition $-4 < x < 4$?",
+    "options": ["A) -9", "B) 9", "C) 0", "D) -3"],
+    "correct": "A",
+    "hint": "Isolate the odd integers contained within the open interval: $-3, -1, 1,$ and $3$. Multiply these four specific numbers together, watching the sign changes carefully."
+  },
+  {
+    "id": "W01_MATH_20",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A digital thermometer at a sub-zero research base records an evening temperature drop of $3^\\circ\\text{C}$ every hour for 4 consecutive hours, starting from a baseline of $-2^\\circ\\text{C}$. What is the final tracked integer temperature?",
+    "options": ["A) $-14^\\circ\\text{C}$", "B) $-10^\\circ\\text{C}$", "C) $-12^\\circ\\text{C}$", "D) $-16^\\circ\\text{C}$"],
+    "correct": "A",
+    "hint": "Calculate the total downward drop ($3 \\times 4 = 12^\\circ\\text{C}$). Subtract this variation from your initial baseline negative starting value of $-2$."
+  },
+  {
+    "id": "W01_CHEM_16",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "An analytical solution of pure Citric Acid is mixed with a neutral drop of Phenolphthalein indicator. A student slowly drips a basic solution of Potassium Hydroxide into the beaker until neutralization is complete. What specific visual endpoint confirms that the solution has turned slightly basic?",
+    "options": ["A) The fluid flashes bright blue", "B) The colorless solution shifts to a steady light pink hue", "C) The mixture forms a dense white precipitate that settles to the bottom", "D) The yellow indicator turns deep orange"],
+    "correct": "B",
+    "hint": "Phenolphthalein is completely colorless in acidic and neutral conditions. It shifts to a distinct pink hue the moment the solution becomes even slightly basic."
+  },
+  {
+    "id": "W01_CHEM_17",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "A lab student is cleaning up test tubes containing solutions of three common household items: Soap liquid, Lemon juice, and Common salt water. If she tests each fluid with a strip of neutral blue litmus paper, which sample will cause the paper to turn bright red?",
+    "options": ["A) Soap liquid", "B) Lemon juice", "C) Common salt water", "D) None of the samples"],
+    "correct": "B",
+    "hint": "Recall the classic indicator rule: acids turn blue litmus red, bases turn red litmus blue, and neutral salts cause no color change. Lemon juice contains citric acid."
+  },
+  {
+    "id": "W01_CHEM_18",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A student sets up two test tubes. Tube 1 contains dilute Hydrochloric Acid and a scrap of Copper metal. Tube 2 contains dilute Hydrochloric Acid and a scrap of Iron metal. What observations will be recorded after 10 minutes?",
+    "options": ["A) Both tubes show intense bubbling and gas evolution", "B) Tube 1 shows no reaction, while Tube 2 produces bubbles of Hydrogen gas", "C) Tube 1 produces Hydrogen gas, while Tube 2 shows zero reaction", "D) Both metals dissolve silently without creating any gas"],
+    "correct": "B",
+    "hint": "Review the metal reactivity series: Copper is less reactive than hydrogen and cannot displace it from dilute hydrochloric acid under normal conditions, whereas Iron reacts steadily."
+  },
+  {
+    "id": "W01_CHEM_19",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "Why is calamine lotion (which contains Zinc Carbonate) frequently applied to skin patches that have been irritated by an acidic insect bite or sting?",
+    "options": ["A) It acts as a powerful oxidizing agent that destroys the skin cells", "B) It is a mild base that neutralizes the injected formic acid, easing the irritation", "C) It lowers the freezing point of blood vessels to numb the area", "D) It turns the skin surface acidic to stop bacteria growth"],
+    "correct": "B",
+    "hint": "An insect bite injects an acidic compound. Calamine lotion provides a mild basic counter-balance to neutralize the acid directly on the skin."
+  },
+  {
+    "id": "W01_CHEM_20",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A chemistry student wants to synthesize a sample of Sodium Nitrate salt using a classic neutralization reaction. Which starting acid and base combination must be selected for this procedure?",
+    "options": ["A) Hydrochloric Acid + Sodium Hydroxide", "B) Nitric Acid + Sodium Hydroxide", "C) Sulphuric Acid + Sodium Carbonate", "D) Nitric Acid + Potassium Hydroxide"],
+    "correct": "B",
+    "hint": "The salt's name gives away its components: 'Sodium' comes from the base (Sodium Hydroxide), and 'Nitrate' comes from the source acid (Nitric Acid)."
+  },
+  {
+    "id": "W01_BIOL_16",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A research team places a healthy, potted green plant inside a lightproof chamber supplied with a steady stream of carbon dioxide gas. If the plant is kept in total darkness for 72 hours, what change will be measured in the composition of the chamber's air?",
+    "options": ["A) Oxygen levels will rise through photosynthesis", "B) Carbon Dioxide levels will rise, while Oxygen levels drop due to continuous cellular respiration", "C) The air composition will remain completely frozen because plants do not breathe without light", "D) Nitrogen gas will be synthesized by the leaf cells"],
+    "correct": "B",
+    "hint": "Plants perform cellular respiration 24 hours a day, absorbing oxygen and releasing carbon dioxide. Without light, photosynthesis stops completely, meaning no oxygen is produced to offset respiration."
+  },
+  {
+    "id": "W01_BIOL_17",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "A student looks at a drop of pond water under a microscope and identifies a single-celled organism that extends temporary, finger-like projections to engulf tiny food particles. What are these structural extensions called, and what organism is this?",
+    "options": ["A) Cilia, Paramecium", "B) Pseudopodia, Amoeba", "C) Flagella, Euglena", "D) Tentacles, Hydra"],
+    "correct": "B",
+    "hint": "These 'false feet' are formed by cytoplasmic streaming, allowing the organism to change its shape dynamically to capture food through phagocytosis."
+  },
+  {
+    "id": "W01_BIOL_18",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "An experiment feeds a plant Carbon Dioxide gas containing a rare carbon isotope ($^{14}\\text{C}$). After several hours of bright light exposure, the plant tissue is processed. In which specific molecular compound will the radioactive $^{14}\\text{C}$ markers be concentrated?",
+    "options": ["A) Released Oxygen gas molecules ($O_2$)", "B) Synthesized Starch and Carbohydrate molecules", "C) Liquid water molecules within the xylem vessels", "D) Chlorophyll pigment proteins inside the chloroplasts"],
+    "correct": "B",
+    "hint": "During the light-independent reactions of photosynthesis, carbon dioxide gas is fixed into stable organic carbon chains to create glucose, which is then stored as starch arrays."
+  },
+  {
+    "id": "W01_BIOL_19",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do farmers frequently cultivate leguminous crops (like peas, beans, and lentils) in rotation with grain crops like wheat or corn on the same plot of land?",
+    "options": ["A) Legume roots absorb excess water to prevent soil logging problems", "B) Legumes host symbiotic *Rhizobium* bacteria in root nodules that fix atmospheric nitrogen, naturally enriching the soil", "C) Grain crops require basic acids produced by legume flowers to sprout", "D) Legumes block solar radiation to keep the soil cool for grain roots"],
+    "correct": "B",
+    "hint": "Most plants cannot absorb nitrogen gas directly from the air. Symbiotic bacteria convert atmospheric nitrogen into usable nitrates, reducing the need for chemical fertilizers."
+  },
+  {
+    "id": "W01_BIOL_20",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A person runs a rigorous marathon on a hot afternoon. Which option correctly matches the physiological respiration changes occurring in their lungs and muscle tissues during the final sprint?",
+    "options": ["A) Lungs: Exclusively anaerobic; Muscles: Aerobic respiration", "B) Lungs: Increased aerobic gas exchange; Muscles: Concurrent aerobic and anaerobic respiration yielding lactic acid", "C) Lungs: No gas exchange; Muscles: Complete cessation of energy production", "D) Lungs: Carbon Dioxide intake; Muscles: Ethanol fermentation loops"],
+    "correct": "B",
+    "hint": "The lungs scale up breathing to maximize oxygen intake for systemic aerobic respiration, but heavily strained muscles supplement this energy deficit through local anaerobic pathways."
+  },
+  {
+    "id": "W01_LOGIC_16",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Pointing to a family portrait, a student notes: 'The man standing in the center is the brother of the daughter of my maternal grandfather's only child.' If the student's only child reference points to their mother, how is the man in the portrait related to the student?",
+    "options": ["A) Father", "B) Uncle", "C) Brother", "D) Cousin"],
+    "correct": "C",
+    "hint": "Break down the description: 'My maternal grandfather's only child' refers to the student's mother. The 'daughter of my mother' is the student's sister. Her brother is also the student's brother."
+  },
+  {
+    "id": "W01_LOGIC_17",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Analyze the alphanumeric sequence and identify the next missing data token: A2B, C4D, E8F, G16H, ?",
+    "options": ["A) I24J", "B) I32J", "C) H32I", "D) J32K"],
+    "correct": "B",
+    "hint": "Track the three component lines independently: The first and last letters move forward by skipping one position ($A \\rightarrow C \\rightarrow E \\rightarrow G \\rightarrow I$). The middle numbers follow a doubling sequence ($2, 4, 8, 16, 32$)."
+  },
+  {
+    "id": "W01_LOGIC_18",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "An orbital tracking telescope starts facing Southwest. It executes a $90^\\circ$ clockwise rotation, followed by a $180^\\circ$ counter-clockwise turn, and a final $45^\\circ$ clockwise adjustment. What direction is the telescope facing now?",
+    "options": ["A) South", "B) West", "C) Southeast", "D) Northwest"],
+    "correct": "A",
+    "hint": "Sum the angular movements algebraically: $+90$ (CW) $- 180$ (CCW) $+ 45$ (CW) $= -45^\\circ$ net counter-clockwise rotation from the initial Southwest direction."
+  },
+  {
+    "id": "W01_LOGIC_19",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Examine the operational relationship and solve for the missing terminal value: [3, 4 -> 25], [5, 12 -> 169], [6, 8 -> ?].",
+    "options": ["A) 48", "B) 100", "C) 144", "D) 84"],
+    "correct": "B",
+    "hint": "Look closely at the numbers; they match the classic Pythagorean pattern. Square both input values and add them together to find the output: $6^2 + 8^2 = 36 + 64 = 100$."
+  },
+  {
+    "id": "W01_LOGIC_20",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Five students (P, Q, R, S, and T) are sitting in a straight row facing North. R sits exactly in the middle of the row. T sits immediately to the right of S. P sits at the far left edge of the row. Who is sitting immediately to the left of R?",
+    "options": ["A) Q", "B) S", "C) T", "D) P"],
+    "correct": "A",
+    "hint": "Since R is in the middle, it occupies position 3 out of 5 ($P, \\_, R, \\_, \\_$). Since P is at position 1 and T sits immediately to the right of S, S and T must occupy positions 4 and 5, leaving position 2 for Q."
+  },
+{
+    "id": "W01_PHYS_21",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Two high-speed scientific drones, Drone Alpha and Drone Beta, are flying along a straight path. Drone Alpha travels at a uniform speed of $15\\text{ m/s}$ due East relative to the ground tracking grid, while Drone Beta travels at $25\\text{ m/s}$ due West. What is the relative speed of Drone Beta as measured by the onboard optical sensors of Drone Alpha?",
+    "options": ["A) $10\\text{ m/s}$", "B) $40\\text{ m/s}$", "C) $-10\\text{ m/s}$", "D) $20\\text{ m/s}$"],
+    "correct": "B",
+    "hint": "When two objects move in directly opposite directions, their relative speed is found by adding their individual speeds together: $v_{\\text{rel}} = v_A + v_B$."
+  },
+  {
+    "id": "W01_PHYS_22",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "A student leaves a solid blocks of copper, wood, plastic, and iron outside on a freezing night where the ambient temperature sits at $-5^\\circ\\text{C}$. In the morning, she picks them up. Which block will feel the coldest to her touch, and why?",
+    "options": ["A) Wood, because organic matter drops thermal potential quickly", "B) Iron and Copper, because metals are excellent thermal conductors that rapidly pull heat away from the human hand", "C) Plastic, because polymers absorb cold radiation from a vacuum", "D) All blocks feel identical because their physical mass matrices differ"],
+    "correct": "B",
+    "hint": "All objects have reached thermal equilibrium with the cold air and are at the exact same temperature. The sensation of 'cold' depends on how fast heat leaves your skin, which is determined by a material's thermal conductivity."
+  },
+  {
+    "id": "W01_PHYS_23",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An industrial blast furnace wall is engineered using two layers: an inner refractory brick layer ($k_1$) and an outer steel casing layer ($k_2$). If the brick layer is a poor conductor of heat and the steel is an excellent conductor, which design choice minimizes the rate of thermal leakage to the environment?",
+    "options": ["A) Make the brick layer as thin as possible and the steel layer thick", "B) Make the brick layer thick to maximize thermal resistance and hold the heat inside", "C) Eliminate the brick layer entirely to allow natural convection loops to form", "D) Wrap the outer steel casing in a black body absorption mesh"],
+    "correct": "B",
+    "hint": "To block heat flow, minimize the overall thermal conductivity rate by increasing the thickness ($d$) of the insulating material layer: $Q/t \\propto 1/d$."
+  },
+  {
+    "id": "W01_PHYS_24",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "A driver monitors his car's digital dashboard during a road trip. The odometer reads exactly $24,150\\text{ km}$ at 09:00 AM and tracks to $24,270\\text{ km}$ at 11:00 AM. What was the average speed maintained by the car during this specific driving window?",
+    "options": ["A) $120\\text{ km/h}$", "B) $60\\text{ km/h}$", "C) $80\\text{ km/h}$", "D) $50\\text{ km/h}$"],
+    "correct": "B",
+    "hint": "Calculate the net distance covered by subtracting the initial reading from the final reading ($24270 - 24150$), then divide by the total elapsed time (2 hours)."
+  },
+  {
+    "id": "W01_PHYS_25",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An engineer designs an astronomical sensor that is highly sensitive to temperature changes. If the sensor expands in volume when heated, what happens to its physical density as it passes from a cold shadow into direct sunlight?",
+    "options": ["A) Its density increases because thermal energy adds extra mass", "B) Its density decreases because its mass remains constant while its volume expands", "C) Its density stays perfectly constant due to structural inertia parameters", "D) Its density drops to zero as it transitions into a plasma state"],
+    "correct": "B",
+    "hint": "Recall the fundamental equation for density: $\\text{Density} = \\text{Mass} / \\text{Volume}$. Since thermal expansion causes the volume to increase while the mass is unchanged, the density must decrease."
+  },
+  {
+    "id": "W01_MATH_21",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An elegant integer sequence is governed by the recursive operational rule: $x_{n} = x_{n-1} \\cdot (-3)$. If the fifth term ($x_5$) in this sequence evaluates to exactly $-162$, what was the value of the initial starting term ($x_1$) of the array?",
+    "options": ["A) 2", "B) -2", "C) 6", "D) -6"],
+    "correct": "B",
+    "hint": "Work backward by dividing by $-3$ at each step, or map the tracking indices explicitly using exponential power structures: $x_5 = x_1 \\cdot (-3)^4$."
+  },
+  {
+    "id": "W01_MATH_22",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Let $x$ and $y$ be two negative integers that satisfy the strict inequality equation $x \\cdot y = 36$. What is the absolute lowest possible value for the algebraic summation $x + y$?",
+    "options": ["A) 12", "B) -12", "C) -13", "D) -37"],
+    "correct": "D",
+    "hint": "List out the negative factor pairs that multiply to $+36$: $(-6, -6), (-4, -9), (-3, -12), (-2, -18), (-1, -36)$. Sum each pair to find which one results in the smallest value on the number line."
+  },
+  {
+    "id": "W01_MATH_23",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "An automated elevator inside a deep mine shaft stands at an initial elevation of $-40\\text{ meters}$ relative to the ground surface. It climbs upward at a constant rate of $5\\text{ meters}$ per second for 12 seconds, and then instantly executes a downward drop of $85\\text{ meters}$. What is its final position coordinate?",
+    "options": ["A) $-65\\text{ meters}$", "B) $-105\\text{ meters}$", "C) $-20\\text{ meters}$", "D) $-45\\text{ meters}$"],
+    "correct": "A",
+    "hint": "Translate the movements into a step-by-step integer equation: $(-40) + (5 \\cdot 12) - 85$. Compute the values in order."
+  },
+  {
+    "id": "W01_MATH_24",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "How many distinct integer values satisfy the concurrent inequality parameters $-3 < x \\le 4$?",
+    "options": ["A) 7", "B) 6", "C) 8", "D) 5"],
+    "correct": "A",
+    "hint": "List the valid numbers carefully, noting that $-3$ is excluded because of the strict inequality, while $4$ is included: $-2, -1, 0, 1, 2, 3, 4$."
+  },
+  {
+    "id": "W01_MATH_25",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A cold-storage freezer module at an agricultural lab registers a baseline temperature of $-8^\\circ\\text{C}$. A technician resets the cooling parameters, causing the temperature to drop by $2^\\circ\\text{C}$ every hour for a total of 6 hours. What is the new temperature?",
+    "options": ["A) $-20^\\circ\\text{C}$", "B) $-16^\\circ\\text{C}$", "C) $-12^\\circ\\text{C}$", "D) $-4^\\circ\\text{C}$"],
+    "correct": "A",
+    "hint": "Calculate the total temperature drop ($2 \\times 6 = 12^\\circ\\text{C}$). Subtract this change from the starting negative value of $-8$."
+  },
+  {
+    "id": "W01_CHEM_21",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A student sets up a classic neutralization experiment by mixing a solution of Hydrochloric Acid with an equal amount of Sodium Hydroxide. He places a sensitive digital thermometer in the beaker and notices that the temperature rises significantly during the reaction. What chemical classification explains this thermal shift?",
+    "options": ["A) Endothermic displacement reaction", "B) Exothermic neutralization reaction, which inherently releases thermal energy", "C) Physical phase change with zero atomic interaction", "D) Thermal decomposition of water molecules"],
+    "correct": "B",
+    "hint": "Acid-base neutralization reactions are exothermic. The formation of water molecules from hydrogen ($H^+$) and hydroxide ($OH^-$) ions releases stored chemical energy as heat."
+  },
+  {
+    "id": "W01_CHEM_22",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "A student wants to test if a bottle of clear carbonated fizzy water contains acidic components. Which of the following indicator observations would confirm the presence of an acid?",
+    "options": ["A) Phenolphthalein turns bright pink", "B) Blue litmus paper turns a distinct red hue", "C) Turmeric paste indicator turns deep reddish-brown", "D) The fluid remains perfectly amber colored"],
+    "correct": "B",
+    "hint": "Fizzy carbonated water contains dissolved Carbon Dioxide, which forms weak Carbonic Acid ($H_2CO_3$). Recall how acids affect blue litmus paper."
+  },
+  {
+    "id": "W01_CHEM_23",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "You add a drop of China Rose indicator to an unknown solution, and the fluid turns a vibrant green color. What will happen if you mix this unknown solution with a sample of dilute Hydrochloric Acid?",
+    "options": ["A) They will react to release flammable Hydrogen gas", "B) They will neutralize each other to produce a salt and water", "C) The solution will boil violently and form an organic oxide", "D) The China Rose indicator will turn bright magenta instantly without any chemical interaction"],
+    "correct": "B",
+    "hint": "China Rose indicator turns green in basic solutions. Since your unknown solution is a base, adding Hydrochloric Acid will trigger a standard neutralization reaction."
+  },
+  {
+    "id": "W01_CHEM_24",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do dentists recommend brushing teeth thoroughly after meals using a toothpaste that contains a mild basic formulation?",
+    "options": ["A) The toothpaste contains acids that dissolve remaining food particles", "B) Bacteria in the mouth ferment residual sugars to produce acids that erode tooth enamel; basic toothpaste neutralizes these harmful acids", "C) Hydroxide ions harden enamel directly via a physical phase transition", "D) Toothpaste creates an airtight layer that blocks cellular respiration inside teeth"],
+    "correct": "B",
+    "hint": "Enamel erosion is caused by acidic environments below a certain pH threshold. Neutralization protects the structural integrity of your teeth."
+  },
+  {
+    "id": "W01_CHEM_25",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A student mixes a sample of concentrated Sulphuric Acid with solid Sodium Chloride salt in a dry test tube. She holds a damp piece of blue litmus paper over the escaping gas. What color shift occurs, and what gas is responsible?",
+    "options": ["A) The paper stays blue; Hydrogen gas is released", "B) The paper turns red; Hydrogen Chloride ($HCl$) gas is released, which forms an acid when it dissolves on the damp paper", "C) The paper turns bright yellow; Chlorine gas is released", "D) The paper turns colorless due to a bleaching reaction triggered by Oxygen gas"],
+    "correct": "B",
+    "hint": "The reaction produces Hydrogen Chloride gas. When this gas dissolves in the water on the damp litmus paper, it dissociates into acid ions, turning the paper red."
+  },
+  {
+    "id": "W01_BIOL_21",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "An experimental biology chamber isolates a plant leaf cell and measures the rate of molecular transport across its membrane. If the cell's ATP production stops completely due to a metabolic poison, which cellular transport process will collapse?",
+    "options": ["A) Passive diffusion of water molecules through osmosis", "B) Active transport of mineral ions against their concentration gradient", "C) Simple gaseous exchange of Oxygen and Carbon Dioxide", "D) Structural evaporation through transpiration pull pathways"],
+    "correct": "B",
+    "hint": "Active transport requires cellular energy (ATP) to pump molecules from an area of low concentration to an area of high concentration. Passive processes do not require energy."
+  },
+  {
+    "id": "W01_BIOL_22",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "A student sets up an experiment with two identical test tubes containing a diluted starch solution. She adds fresh saliva to Tube A, while Tube B receives only pure distilled water. After 30 minutes, she adds a few drops of iodine to both tubes. Tube B turns blue-black, but Tube A does not. Why?",
+    "options": ["A) Saliva contains acids that neutralize iodine molecules", "B) Saliva contains the enzyme amylase, which breaks down complex starch into simple sugars that do not react with iodine", "C) Tube A shifted exclusively to an anaerobic respiration loop", "D) Distilled water synthesizes extra starch molecules under room light"],
+    "correct": "B",
+    "hint": "Recall the role of digestive enzymes in saliva. Amylase breaks the chemical bonds in complex starch molecules, transforming them into simpler carbohydrates."
+  },
+  {
+    "id": "W01_BIOL_23",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A cell biologist flags a glucose molecule with a radioactive tracer and introduces it to a culture of human cells performing aerobic respiration. Trace the correct sequential path of the radioactive carbon markers through the cell's metabolic checkpoints:",
+    "options": ["A) Nucleus -> Vacuole -> Cell Wall", "B) Cytoplasm (Glycolysis) -> Mitochondria (Krebs Cycle) -> Released as Carbon Dioxide gas", "C) Chloroplast -> Ribosome -> Xylem vessels", "D) Stomata -> Guard Cells -> Phloem tracks"],
+    "correct": "B",
+    "hint": "Glucose is first broken down in the cytoplasm to form pyruvate. This product then enters the mitochondria, where it is fully oxidized to generate ATP, water, and carbon dioxide gas."
+  },
+  {
+    "id": "W01_BIOL_24",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do Earth's waterlogged or swampy soils often support unique insectivorous plants rather than standard agricultural crops like wheat or corn?",
+    "options": ["A) Waterlogged soil lacks sufficient oxygen and helpful bacteria, preventing organic matter from decaying and leaving the soil nitrogen-poor", "B) Swamp water dissolves the chlorophyll pigments out of normal root systems", "C) Insectivorous plants use water vapor to perform anaerobic respiration", "D) Swamp soils are highly concentrated with toxic basic salts that turn leaves into spines"],
+    "correct": "A",
+    "hint": "Nitrogen-fixing bacteria need well-aerated soil to survive. In waterlogged swamps, plants must get their nitrogen from alternative sources, like digesting insects."
+  },
+  {
+    "id": "W01_BIOL_25",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A student measures the transpiration rate of a potted plant under different conditions. She notes that the rate increases dramatically when she places a portable fan next to the plant. What mechanism explains this increase?",
+    "options": ["A) The fan forces carbon dioxide gas directly into the root cells", "B) Moving air sweeps away the water vapor accumulating around the leaves, lowering the external humidity and speeding up evaporation from the stomata", "C) The wind triggers an endothermic reaction inside the xylem vessels", "D) Air currents cause guard cells to shrink and freeze locked open"],
+    "correct": "B",
+    "hint": "Evaporation depends on the moisture gradient between the inside of the leaf and the surrounding air. Removing humid air from around the leaf surface maintains a steep gradient, accelerating water loss."
+  },
+  {
+    "id": "W01_LOGIC_21",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "If an intelligence satellite codes the operational string 'GALAXY' into the encrypted telemetry format 'HPNDBA', decode the shifting pattern to determine the encrypted string for the word 'PLANET'.",
+    "options": ["A) QNDRFY", "B) QOBPIT", "C) QMCOFU", "D) QNDPGO"],
+    "correct": "A",
+    "hint": "Analyze the letter shifts: G to H (+1), A to P (+15)... wait, check the alphabet loops or look at alternating vowels and consonants: G(+1)=H, A(+15)=P, L(+2)=N, A(+3)=D, X(+4)=B, Y(+2)=A. Follow the step progression."
+  },
+  {
+    "id": "W01_LOGIC_22",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Find the next missing alphanumeric term in the following mathematical series: Z1A, X2D, V6G, T24J, ?",
+    "options": ["A) R120M", "B) S120M", "C) R96L", "D) S48K"],
+    "correct": "A",
+    "hint": "Break the sequence down: Letters at the start move backward skipping one step ($Z, X, V, T, R$). Middle numbers follow a factorial multiplication path ($\\times 1, \\times 2, \\times 3, \\times 4, \\times 5$). Last letters move forward by skipping two positions ($A, D, G, J, M$)."
+  },
+  {
+    "id": "W01_LOGIC_23",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "A rover drives $8\\text{ km}$ North, turns left $90^\\circ$ and proceeds for $6\\text{ km}$. It then makes another $90^\\circ$ left turn and travels $16\\text{ km}$ South. What is the straight-line displacement distance back to its starting base coordinates?",
+    "options": ["A) $14\\text{ km}$", "B) $10\\text{ km}$", "C) $12\\text{ km}$", "D) $18\\text{ km}$"],
+    "correct": "B",
+    "hint": "Calculate its final directional position offsets: it is $6\\text{ km}$ West and $8\\text{ km}$ South ($16 - 8$) from the starting coordinates. Apply the Pythagorean theorem."
+  },
+  {
+    "id": "W01_LOGIC_24",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Examine the operational logic grid parameters and solve for the missing terminal digit: [4, 2 -> 12], [6, 3 -> 27], [8, 4 -> ?].",
+    "options": ["A) 32", "B) 48", "C) 64", "D) 40"],
+    "correct": "B",
+    "hint": "Look for a pattern that connects the inputs to the output: subtract the second number from the first, then multiply the result by the first number: $(4 - 2) \\times 4 = 8$? No, try: square the first number and divide by something, or multiply them together: $4 \\times 2 = 8 + 4 = 12$. $6 \\times 3 = 18 + 9 = 27$. The pattern is: $(x \\cdot y) + y^2$."
+  },
+  {
+    "id": "W01_LOGIC_25",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Six student profiles (M, N, O, P, Q, and R) are standing in a circle facing inward toward a central monitor. M stands exactly between N and Q. P stands exactly between O and R. If N stands immediately to the left of R, who is standing directly opposite to M?",
+    "options": ["A) O", "B) P", "C) Q", "D) R"],
+    "correct": "B",
+    "hint": "Sketch out the circle tracking nodes based on the clues: arrange the positions sequentially around the ring until all conditions match up smoothly."
+  },
+  {
+    "id": "W01_PHYS_26",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A data logging sensor plots a Velocity-Time graph for a test vehicle. The graph shows a perfectly horizontal straight line running parallel to the time axis at a value of $20\\text{ m/s}$ for 10 seconds. What is the acceleration of the vehicle, and what total distance did it travel during this timeframe?",
+    "options": ["A) $2\\text{ m/s}^2$, $200\\text{ meters}$", "B) $0\\text{ m/s}^2$, $200\\text{ meters}$", "C) $0\\text{ m/s}^2$, $20\\text{ meters}$", "D) $20\\text{ m/s}^2$, $10\\text{ meters}$"],
+    "correct": "B",
+    "hint": "The slope of a Velocity-Time graph represents acceleration, while the area under the curve gives the total distance traveled. A flat, horizontal line has a slope of zero."
+  },
+  {
+    "id": "W01_PHYS_27",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do engineers wrap high-pressure hot water delivery pipes in thick layers of fiberglass felt or mineral wool before burying them underground?",
+    "options": ["A) To increase the rate of heat loss through conduction vectors", "B) To trap pocket layers of stagnant air, which is a poor conductor of heat, thereby minimizing thermal leakage", "C) To convert convective heat currents into electromagnetic radiation", "D) To drop the local boiling point of the fluid matrix"],
+    "correct": "B",
+    "hint": "Fiberglass relies on trapping thousands of microscopic air gaps. Because air molecules are spaced far apart, they cannot easily pass kinetic thermal energy via lattice conduction."
+  },
+  {
+    "id": "W01_PHYS_28",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An experimental temperature scale ($^\\circ\\text{Y}$) sets the freezing point of water at $-30^\\circ\\text{Y}$ and the boiling point at $+70^\\circ\\text{Y}$. If a meteorological station notes a climate tracking change of $\\Delta T = 25^\\circ\\text{C}$ on a standard Celsius thermometer, what is the equivalent temperature variation on the $^\\circ\\text{Y}$ scale?",
+    "options": ["A) $25^\\circ\\text{Y}$", "B) $50^\\circ\\text{Y}$", "C) $75^\\circ\\text{Y}$", "D) $12.5^\\circ\\text{Y}$"],
+    "correct": "A",
+    "hint": "Look at the total number of divisions on both scales. The Celsius scale has 100 divisions ($100 - 0$), and the $^\\circ\\text{Y}$ scale also has exactly 100 divisions ($70 - (-30)$). This means a change of one degree on one scale matches a change of one degree on the other."
+  },
+  {
+    "id": "W01_PHYS_29",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "A digital stopwatch counts down using an internal quartz crystal resonator. If the stopwatch registers a cumulative total of $3600\\text{ ticks}$ across an operating window of exactly 1 hour, what is the operational frequency of the counter mechanism?",
+    "options": ["A) $1\\text{ tick per second (1 Hz)}$", "B) $60\\text{ ticks per second (60 Hz)}$", "C) $0.5\\text{ ticks per second (0.5 Hz)}$", "D) $3.6\\text{ ticks per second (3.6 Hz)}$"],
+    "correct": "A",
+    "hint": "Frequency measures how many events happen per second. Convert the total time of 1 hour into seconds ($60 \\times 60$) before setting up your calculation."
+  },
+  {
+    "id": "W01_PHYS_30",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A metal rod has one end placed in a steady flame while the other end is held in an ice bath. Once the system stabilizes into a steady state of heat transfer, how does the temperature change along the length of the rod?",
+    "options": ["A) The temperature drops abruptly to freezing right at the midpoint of the rod", "B) The temperature decreases uniformly and linearly from the hot end to the cold end", "C) The entire rod reaches a single uniform temperature matching the flame", "D) The temperature cycles up and down in a wave pattern along the rod"],
+    "correct": "B",
+    "hint": "In a steady state of one-dimensional conduction along a uniform rod with insulated sides, the temperature gradient ($\\Delta T / \Delta x$) remains constant."
+  },
+  {
+    "id": "W01_MATH_26",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Let $a$, $b$, and $c$ be three integers such that $a \\cdot b \\cdot c = -48$. If $a = -2$ and $b = -3$, evaluate the absolute value of the expression: $|a - b + c|$.",
+    "options": ["A) 7", "B) 9", "C) 11", "D) 5"],
+    "correct": "A",
+    "hint": "First, find the value of integer $c$ by substituting $a$ and $b$ into the multiplication equation. Once you have $c$, calculate the multi-step addition and subtraction inside the absolute value bars."
+  },
+  {
+    "id": "W01_MATH_27",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An operational matrix defines a sequence where each term is calculated using the rule: $T_n = (-1)^n \\cdot n^2$. Compute the sum of the third and fourth terms ($T_3 + T_4$).",
+    "options": ["A) 25", "B) 7", "C) -7", "D) -25"],
+    "correct": "B",
+    "hint": "Calculate each term carefully, paying close attention to the alternating sign rule: $T_3 = (-1)^3 \\cdot 3^2 = -9$. Find $T_4$ the same way and add them together."
+  },
+  {
+    "id": "W01_MATH_28",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A weather satellite recording station on an ice shelf measures a morning baseline temperature of $-14^\\circ\\text{C}$. Over the next three hours, automated heaters raise the internal temperature by $+22^\\circ\\text{C}$, followed by a storm that drops the temperature by $-11^\\circ\\text{C}$. What is the final tracked integer temperature?",
+    "options": ["A) $-3^\\circ\\text{C}$", "B) $-5^\\circ\\text{C}$", "C) $+8^\\circ\\text{C}$", "D) $+3^\\circ\\text{C}$"],
+    "correct": "A",
+    "hint": "Combine the values into a single integer expression: $(-14) + (+22) + (-11)$. Work through the operations from left to right."
+  },
+  {
+    "id": "W01_MATH_29",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "If $x$ is an integer that satisfies the inequality parameters $-5 \\le x < 2$, what is the calculated value of the largest possible difference between any two numbers in this solution set?",
+    "options": ["A) 7", "B) 6", "C) 5", "D) 8"],
+    "correct": "B",
+    "hint": "Identify the absolute largest integer and the absolute smallest integer included in the range. Keep in mind that 2 is excluded by the strict inequality, so the largest valid integer is 1."
+  },
+  {
+    "id": "W01_MATH_30",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A digital accounting ledger records five automated updates to a business account balance: $-250$, $+400$, $-150$, $-300$, and $+100$. If the account balance stood at $+50$ before this sequence ran, what is the final balance coordinate?",
+    "options": ["A) $-150$", "B) $-200$", "C) $-100$", "D) $+50$"],
+    "correct": "A",
+    "hint": "Add up all the positive and negative updates to find the net change, then add that result to your starting balance of $+50$."
+  },
+  {
+    "id": "W01_CHEM_26",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "An unknown clear solution is added to three separate indicator vials. It causes Phenolphthalein to remain colorless, turns Blue Litmus paper a distinct red hue, and turns Methyl Orange indicator red. Which chemical compound could this solution be?",
+    "options": ["A) Sodium Hydroxide ($NaOH$)", "B) Dilute Hydrochloric Acid ($HCl$)", "C) Potassium Hydroxide ($KOH$)", "D) Calcium Hydroxide ($Ca(OH)_2$)"],
+    "correct": "B",
+    "hint": "The color changes (blue litmus turning red, methyl orange turning red) point to an acidic solution. Look for an option that is an acid rather than a base."
+  },
+  {
+    "id": "W01_CHEM_27",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "A student accidentally stains his white school shirt with turmeric yellow curry paste. When he rubs the stain with laundry soap, it instantly flashes a vivid reddish-brown color. What chemical property of the soap causes this reaction?",
+    "options": ["A) Soap is highly acidic", "B) Soap is basic, which triggers a color shift in the natural turmeric indicator", "C) Soap acts as an oxidizing bleach solution", "D) Soap neutralizes the fabric fibers physically"],
+    "correct": "B",
+    "hint": "Turmeric is a natural indicator that stays yellow in acidic or neutral solutions but turns a characteristic reddish-brown color when exposed to bases."
+  },
+  {
+    "id": "W01_CHEM_28",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A lab technician combines equal volumes of an acid solution with a base solution in an insulated flask. After the reaction finishes, she filters the solution and evaporates the water, leaving behind a crystalline white salt. Which chemical process took place?",
+    "options": ["A) Thermal Decomposition", "B) Neutralization", "C) Aerobic Oxidation", "D) Displacement Gas Evolution"],
+    "correct": "B",
+    "hint": "When an acid and a base react, they cancel each other out to produce a neutral salt and water. This is a classic neutralization reaction."
+  },
+  {
+    "id": "W01_CHEM_29",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do environmental regulations require coal-fired power stations to pass their exhaust gases through slurry chambers containing crushed limestone (Calcium Carbonate) before releasing them into the atmosphere?",
+    "options": ["A) To mix volatile carbon particles into organic compounds", "B) To neutralize acidic gases like Sulfur Dioxide ($SO_2$) that would otherwise cause acid rain", "C) To convert oxygen atoms into nitrogen gas matrices", "D) To lower the exhaust gas temperature to freezing via condensation loops"],
+    "correct": "B",
+    "hint": "Burning fossil fuels releases sulfur oxides, which react with water vapor in the air to form acids. Limestone acts as a basic scrubber to neutralize these gases before they escape."
+  },
+  {
+    "id": "W01_CHEM_30",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A student sets up a test tube containing solid Sodium Hydrogen Carbonate (Baking Soda) and pours in a sample of organic acetic acid (vinegar). She rapidly seals the tube with a stopper connected to a glass delivery tube. If she bubbles the escaping gas through fresh lime water, what visual change will confirm the gas's identity?",
+    "options": ["A) The lime water turns bright pink", "B) The lime water turns milky due to the formation of a Calcium Carbonate precipitate", "C) The solution catches fire with a sharp popping sound", "D) The fluid remains clear but forms a blue gel layer"],
+    "correct": "B",
+    "hint": "When an acid reacts with a metal hydrogen carbonate, it releases Carbon Dioxide ($CO_2$) gas. Carbon dioxide reacts with lime water to form insoluble calcium carbonate, turning the liquid milky."
+  },
+  {
+    "id": "W01_BIOL_26",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A plant physiology setup monitors a leaf cell under two settings: Setting A provides bright light and high carbon dioxide, while Setting B keeps the cell in total darkness. How do the cell's ATP production sources change between these settings?",
+    "options": ["A) Setting A uses only root cell absorption; Setting B uses chloroplasts", "B) Setting A generates ATP in both chloroplasts (photosynthesis) and mitochondria (respiration); Setting B generates ATP only in the mitochondria via respiration", "C) Setting A stops respiration completely; Setting B runs photosynthesis anaerobically", "D) Both settings completely shut down ATP production pathways"],
+    "correct": "B",
+    "hint": "Mitochondria produce energy through cellular respiration all the time, day and night. Chloroplasts can only produce energy during the day when light is available for photosynthesis."
+  },
+  {
+    "id": "W01_BIOL_27",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "A student isolates a sample of cells from a plant root and notices they have long, thin, hair-like extensions reaching into the surrounding soil matrix. What is the primary function of these specialized root hair cells?",
+    "options": ["A) To perform photosynthesis using soil carbon blocks", "B) To increase the root's surface area to maximize water and mineral absorption through osmosis and transport pathways", "C) To release carbon dioxide gas directly into storage cells", "D) To execute anaerobic fermentation loops"],
+    "correct": "B",
+    "hint": "Root hairs dramatically increase the surface area in contact with soil moisture, making it much easier for the plant to take up water and vital nutrients."
+  },
+  {
+    "id": "W01_BIOL_28",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "An elegant botany experiment uses an airtight glass bell jar to enclose a healthy green plant along with a small dish of water. If the setup is placed in continuous bright sunlight, why does the carbon dioxide level inside the jar drop rapidly during the first few hours before leveling off?",
+    "options": ["A) The plant is absorbing $CO_2$ for photosynthesis faster than it releases it through respiration", "B) Carbon dioxide is condensing into liquid water on the glass walls", "C) The plant has shifted completely to anaerobic respiration loops", "D) High light levels destroy the carbon atoms inside the jar"],
+    "correct": "A",
+    "hint": "In bright light, the rate of photosynthesis is much faster than the rate of respiration, meaning the plant consumes far more carbon dioxide than it produces."
+  },
+  {
+    "id": "W01_BIOL_29",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do people breathe much faster and deeper during and immediately after a fast sprint compared to when they are resting?",
+    "options": ["A) To clear out nitrogen gas bubbles that form in joint spaces", "B) To supply extra oxygen to cells for aerobic respiration and to break down the lactic acid built up during anaerobic muscle activity", "C) To convert glucose directly into liquid water inside the lungs", "D) To prevent the blood vessels from freezing under high heat changes"],
+    "correct": "B",
+    "hint": "Heavy exercise creates an 'oxygen debt' because muscles rely on anaerobic pathways for quick energy. Breathing hard helps pay back that debt by supplying the oxygen needed to process the lactic acid byproduct."
+  },
+  {
+    "id": "W01_BIOL_30",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A cell biologist isolates a sample of single-celled yeast organisms and places them in a flask filled with a warm sugar solution. She seals the top with a balloon. After an hour, the balloon inflates. Which pair of chemical products will be found inside the flask liquid?",
+    "options": ["A) Lactic Acid + Water Matrix", "B) Ethanol (Alcohol) + Carbon Dioxide gas (which inflated the balloon)", "C) Glucose Polymers + Oxygen Gas", "D) Acetic Acid + Hydrogen Gas"],
+    "correct": "B",
+    "hint": "Yeast breaks down sugar in the absence of oxygen through a process called anaerobic fermentation. This pathway yields alcohol and carbon dioxide gas as byproducts."
+  },
+  {
+    "id": "W01_LOGIC_26",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "A coding computer transposes the message string 'LAUNCH' into the encrypted cipher 'NCSWFK'. Using the exact same transposition rule, decode the pattern to find the encrypted version of the word 'ROCKET'.",
+    "options": ["A) TQEMGV", "B) TQEOGV", "C) TPEOGW", "D) TRENGV"],
+    "correct": "B",
+    "hint": "Track the letter position shifts carefully: L to N (+2), A to C (+2), U to S (-2)... verify if the pattern alternates between moving forward two steps and backward two steps."
+  },
+  {
+    "id": "W01_LOGIC_27",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "A mobile data antenna begins facing East. It executes a $90^\\circ$ counter-clockwise rotation, followed by a $135^\\circ$ clockwise turn, and a final $180^\\circ$ counter-clockwise adjustment. What direction is the antenna pointing now?",
+    "options": ["A) Northwest", "B) Northeast", "C) Southwest", "D) Southeast"],
+    "correct": "B",
+    "hint": "Sum the angular movements mathematically, treating clockwise as a negative change and counter-clockwise as a positive change: $+90 - 135 + 180$. Calculate the net offset from East."
+  },
+  {
+    "id": "W01_LOGIC_28",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Identify the missing alphanumeric term in the following pattern sequence: 2C, 5E, 11H, 23L, ?",
+    "options": ["A) 47Q", "B) 46P", "C) 47P", "D) 45O"],
+    "correct": "A",
+    "hint": "Break the sequence down into two separate lines. For the numbers, each step follows a doubling-plus-one rule ($2 \\times 2 + 1 = 5$). For the letters, the gap between consecutive terms grows by one letter each time (+2, +3, +4, +5)."
+  },
+  {
+    "id": "W01_LOGIC_29",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Examine the relationship matrix parameters and solve for the missing terminal digit: [5, 3 -> 16], [7, 4 -> 33], [9, 5 -> ?].",
+    "options": ["A) 56", "B) 45", "C) 64", "D) 54"],
+    "correct": "C",
+    "hint": "Look for a pattern that connects the two input values to the output. Try squaring the first number and subtracting the square of the second number: $5^2 - 3^2 = 25 - 9 = 16$."
+  },
+  {
+    "id": "W01_LOGIC_30",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Five research modules (A, B, C, D, and E) are ranked by their power consumption rates. Module A uses less power than Module B but more than Module C. Module D uses more power than Module B but is not the highest consumer. If Module E uses the most power overall, which module sits exactly in the middle of the ranking?",
+    "options": ["A) Module A", "B) Module B", "C) Module C", "D) Module D"],
+    "correct": "B",
+    "hint": "Translate the power comparisons into line inequalities: $E > D > B > A > C$. Find the item that sits in the median position."
+  },
+  {
+    "id": "W01_PHYS_31",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An tracking drone records a velocity-time graph for a delivery vehicle. The line starts at a value of $0\\text{ m/s}$ and slopes upward steadily at a constant angle to reach $30\\text{ m/s}$ in exactly 6 seconds. What is the vehicle's acceleration, and how far did it travel during this initial acceleration window?",
+    "options": ["A) $5\\text{ m/s}^2$, $180\\text{ meters}$", "B) $5\\text{ m/s}^2$, $90\\text{ meters}$", "C) $0.2\\text{ m/s}^2$, $90\\text{ meters}$", "D) $6\\text{ m/s}^2$, $30\\text{ meters}$"],
+    "correct": "B",
+    "hint": "Acceleration is the slope of the line: $\\text{rise} / \\text{run}$. The distance traveled is given by the geometric area under the velocity-time line, which forms a right triangle: $(1/2) \\times \\text{base} \\times \\text{height}$."
+  },
+  {
+    "id": "W01_PHYS_32",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "A student stands on a balcony on a clear winter day and holds an aluminum rod in her left hand and a wooden stick in her right hand. If both items have been sitting outside in the $4^\\circ\\text{C}$ air for hours, why does the aluminum feel significantly colder to her touch than the wood?",
+    "options": ["A) The aluminum rod has dropped to a lower temperature than the wood", "B) Aluminum has a much higher thermal conductivity than wood, pulling heat away from her skin at a much faster rate", "C) Wood generates internal heat energy molecules dynamically through cellular paths", "D) Metals attract cold particles from the surrounding atmosphere"],
+    "correct": "B",
+    "hint": "Both objects are at the exact same temperature. The sensation of cold depends on how rapidly heat flows out of your hand into the object. Metals are excellent thermal conductors compared to wood."
+  },
+  {
+    "id": "W01_PHYS_33",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An engineering team builds a prototype space capsule with two insulating layers: a thick polymer foam panel ($k_1 = 0.03$) and an outer carbon-weave shield ($k_2 = 1.2$). To minimize the rate of conductive heat transfer from the blazing exterior into the crew cabin, how should the layers be arranged?",
+    "options": ["A) The foam panel must be as thin as possible to speed up heat movement", "B) The foam panel must be thick to maximize thermal resistance, because materials with lower thermal conductivity coefficients block heat transfer best", "C) The carbon-weave shield should be removed to allow heat to expand cleanly into the vacuum", "D) The layers must be continually inverted during flight to balance the heat matrices"],
+    "correct": "B",
+    "hint": "Review the heat conduction equation: $Q/t \\propto k/d$. To keep the heat flow small, you want a material with a tiny conductivity coefficient ($k$) and a large thickness ($d$)."
+  },
+  {
+    "id": "W01_PHYS_34",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "A maritime tracking screen logs a container ship moving down a shipping channel. The digital log registers the ship's position at $12\\text{ km}$ at 14:00 PM and $42\\text{ km}$ at 15:30 PM. What was the average speed of the vessel during this tracking window?",
+    "options": ["A) $30\\text{ km/h}$", "B) $20\\text{ km/h}$", "C) $40\\text{ km/h}$", "D) $15\\text{ km/h}$"],
+    "correct": "B",
+    "hint": "Find the total distance traveled by subtracting the start position from the end position ($42 - 12 = 30\\text{ km}$). Then divide this distance by the total elapsed time of 1.5 hours."
+  },
+  {
+    "id": "W01_PHYS_35",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A lab technician heats a solid glass marble uniformally. As the marble's volume expands due to thermal particle vibrations while its absolute mass remains unchanged, what is the mathematical consequence for its physical density?",
+    "options": ["A) Its density increases because the thermal energy adds heavy molecules", "B) Its density decreases because density is inversely proportional to volume when mass is constant", "C) Its density stays perfectly unchanged due to atomic inertia constants", "D) Its density instantly cycles up and down in a wave pattern"],
+    "correct": "B",
+    "hint": "Recall the fundamental ratio equation for density: $\\text{Density} = \\text{Mass} / \\text{Volume}$. If the denominator (volume) increases while the numerator (mass) is constant, the overall value must fall."
+  },
+  {
+    "id": "W01_MATH_31",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An elegant integer pattern satisfies the sequence equation: $x_{n} = x_{n-1} \\cdot (-2)$. If the sixth term ($x_6$) in this operational array evaluates to exactly $96$, what was the true value of the initial starting term ($x_1$)?",
+    "options": ["A) -3", "B) 3", "C) -6", "D) 2"],
+    "correct": "A",
+    "hint": "Work backward from the sixth term by dividing by $-2$ at each step, or represent the tracking framework exponentially: $x_6 = x_1 \\cdot (-2)^5$. Keep track of the changing signs."
+  },
+  {
+    "id": "W01_MATH_32",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Let $a$ and $b$ be two distinct negative integers such that $a \\cdot b = 18$. What is the absolute minimum possible value for the algebraic expression $a + b$?",
+    "options": ["A) -9", "B) -11", "C) -19", "D) -18"],
+    "correct": "C",
+    "hint": "List out the factor pairs of negative integers that multiply together to give $+18$: $(-1, -18), (-2, -9), (-3, -6)$. Add the numbers in each pair together to find which sum gives the lowest coordinate value."
+  },
+  {
+    "id": "W01_MATH_33",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A cargo lift inside a subterranean outpost starts at a level of $-15\\text{ meters}$ relative to the surface baseline. It goes down another $-65\\text{ meters}$ to collect tools, and then climbs upward at a constant rate of $4\\text{ meters}$ per second for 25 seconds. What is its final position vector?",
+    "options": ["A) $-20\\text{ meters}$", "B) $+20\\text{ meters}$", "C) $0\\text{ meters (Surface Level)}$", "D) $-40\\text{ meters}$"],
+    "correct": "C",
+    "hint": "Convert the physical problem into a clear integer sequence: $(-15) + (-65) + (4 \\times 25)$. Sum the components step-by-step using order of operations."
+  },
+  {
+    "id": "W01_MATH_34",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "How many separate integer coordinates satisfy the simultaneous inequality bounds given by the rule: $-4 < x \\le 3$?",
+    "options": ["A) 7", "B) 6", "C) 8", "D) 5"],
+    "correct": "A",
+    "hint": "List the valid numbers carefully. The strict inequality means $-4$ is left out of the pool, while the 'less than or equal to' symbol means $3$ is included: $-3, -2, -1, 0, 1, 2, 3$."
+  },
+  {
+    "id": "W01_MATH_35",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A temperature tracking sensor in a vaccine cold-storage container records a morning reading of $-5^\\circ\\text{C}$. A system check causes the temperature to drop by $3^\\circ\\text{C}$ every hour for 4 hours straight. What is the final tracked integer temperature?",
+    "options": ["A) $-12^\\circ\\text{C}$", "B) $-17^\\circ\\text{C}$", "C) $-9^\\circ\\text{C}$", "D) $-20^\\circ\\text{C}$"],
+    "correct": "B",
+    "hint": "Calculate the total downward temperature change: $3 \\times 4 = 12^\\circ\\text{C}$ drop. Combine this negative variation with your starting baseline value of $-5$."
+  },
+  {
+    "id": "W01_CHEM_31",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A student pours a clear acid solution into a beaker containing an equal amount of a basic hydroxide solution. She puts a digital temperature probe into the liquid and notices that the temperature reading increases steadily as the reaction happens. What chemical principle explains this result?",
+    "options": ["A) Neutralization reactions are endothermic and absorb surrounding heat", "B) Neutralization reactions are inherently exothermic, releasing chemical potential energy as heat when hydrogen and hydroxide ions form water", "C) Water molecules are undergoing a thermal decomposition phase change", "D) The indicator molecules are cracking apart into gas bubbles"],
+    "correct": "B",
+    "hint": "When $H^+$ ions from an acid join with $OH^-$ ions from a base to make stable $H_2O$ bonds, energy is released into the surrounding solution, raising its temperature."
+  },
+  {
+    "id": "W01_CHEM_32",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "A student tests a bottle of fresh carbonated mineral water using different chemical indicators. Which of the following observations correctly identifies the acidic nature of the dissolved carbon dioxide gas?",
+    "options": ["A) Phenolphthalein turns a vivid bright pink color", "B) Blue litmus paper turns a distinct red hue", "C) Turmeric indicator paste transforms to a deep reddish-brown shade", "D) The solution turns completely black and milky"],
+    "correct": "B",
+    "hint": "Dissolved carbon dioxide forms a weak acid called Carbonic Acid ($H_2CO_3$). Review how indicators react in acidic environments; acids turn blue litmus paper red."
+  },
+  {
+    "id": "W01_CHEM_33",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "You add a drop of China Rose indicator to an unknown solution from a lab locker, and the liquid turns a dark green color. What will happen if you mix this unknown solution with a sample of dilute Hydrochloric Acid?",
+    "options": ["A) They will generate a high volume of explosive Hydrogen gas bubbles", "B) They will undergo a classic neutralization reaction to produce a salt and water", "C) The China Rose indicator will flash bright yellow and freeze solid", "D) The mixture will turn into an organic peroxide matrix"],
+    "correct": "B",
+    "hint": "The green color change with China Rose indicator proves that the unknown solution is basic. Mixing a base with Hydrochloric Acid always triggers a standard neutralization pathway."
+  },
+  {
+    "id": "W01_CHEM_34",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do dental health professionals strongly recommend brushing teeth with a toothpaste that has a mild basic pH formulation, especially after consuming sugary meals?",
+    "options": ["A) Basic paste contains corrosive elements that dissolve food scraps", "B) Mouth bacteria break down sugar leftovers into acids that erode tooth enamel; basic toothpaste neutralizes these acids to protect the teeth", "C) Toothpaste adds a thick layer of metal carbonate that blocks cellular respiration", "D) Hydroxide elements lower the blood pressure inside the jaw tracks"],
+    "correct": "B",
+    "hint": "Tooth decay begins when acids produced by oral bacteria lower the pH in the mouth, causing enamel to dissolve. Alkaline paste neutralizes these harmful acids."
+  },
+  {
+    "id": "W01_CHEM_35",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A student drops a chunk of solid Sodium Chloride (common salt) into a test tube containing concentrated Sulphuric Acid. She holds a piece of damp blue litmus paper near the mouth of the tube. What happens to the paper, and why?",
+    "options": ["A) The paper remains bright blue because only inert Hydrogen gas is escaping", "B) The paper turns red because Hydrogen Chloride gas ($HCl$) is released, which forms an acid when it dissolves in the moisture on the paper", "C) The paper turns white because escaping Oxygen gas bleaches the indicator molecules", "D) The paper turns purple due to a basic salt precipitation process"],
+    "correct": "B",
+    "hint": "This reaction produces Hydrogen Chloride gas. When the dry gas hits the damp litmus paper, it dissolves in the water film to create hydrochloric acid, turning the paper red."
+  },
+  {
+    "id": "W01_BIOL_31",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "An experimental cell biology chamber treats a plant root hair cell with a chemical compound that completely stops the production of ATP molecules. Which cellular process will break down and stop first?",
+    "options": ["A) The passive movement of water molecules through osmosis", "B) The active transport of vital mineral ions against their concentration gradient into the cell", "C) Simple gas diffusion of oxygen and carbon dioxide through the cell walls", "D) The capillary pulling force driven by leaf transpiration water loss"],
+    "correct": "B",
+    "hint": "Active transport requires metabolic energy (ATP) to pump nutrients from an area of low concentration in the soil to an area of high concentration inside the root cell."
+  },
+  {
+    "id": "W01_BIOL_32",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "A student sets up two test tubes with an equal amount of cooked starch solution. She adds fresh saliva to Tube A and pure distilled water to Tube B. After 30 minutes, she adds iodine drops to both tubes. Tube B turns blue-black, but Tube A does not. What explains this difference?",
+    "options": ["A) Saliva contains acids that neutralize and destroy iodine molecules", "B) Saliva contains the enzyme amylase, which breaks down complex starch into simple sugars that do not react with iodine", "C) Tube A shifted into an intensive anaerobic respiration loop", "D) Distilled water synthesizes extra starch arrays under indoor lighting"],
+    "correct": "B",
+    "hint": "Salivary amylase is a digestive enzyme that cleaves the chemical bonds holding complex starch together, turning it into simpler carbohydrates like maltose."
+  },
+  {
+    "id": "W01_BIOL_33",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A research scientist tracks a carbon atom inside a glucose molecule that has been labeled with a radioactive marker. If this molecule is given to a culture of human liver cells performing aerobic respiration, what is the correct sequence of checkpoints the carbon atom will pass through?",
+    "options": ["A) Nucleus -> Vacuole membrane -> Plant cell wall", "B) Cytoplasm (Glycolysis) -> Mitochondria (Krebs Cycle) -> Released into the air as Carbon Dioxide gas", "C) Chloroplast -> Ribosome strand -> Root xylem tube", "D) Stomata opening -> Guard cell fluid -> Phloem vascular track"],
+    "correct": "B",
+    "hint": "Aerobic respiration starts in the cell cytoplasm where glucose is broken down into pyruvate. This molecule then enters the mitochondria to be fully broken down, releasing $CO_2$ gas as a waste product."
+  },
+  {
+    "id": "W01_BIOL_34",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do swampy, waterlogged wetlands often support unique insectivorous plants (like Sundews or Venus Flytraps) rather than standard crop plants like corn or wheat?",
+    "options": ["A) Waterlogged soil is low in oxygen, preventing dead organic matter from breaking down properly and leaving the soil very poor in usable nitrogen nutrients", "B) Swamp water strips chlorophyll out of root cells, blocking photosynthesis", "C) Insectivorous plants perform anaerobic respiration using water vapor molecules", "D) Marsh soils contain basic salts that turn leaves into protective spines"],
+    "correct": "A",
+    "hint": "Nitrogen-fixing bacteria need air spaces in the soil to survive. In waterlogged swamps, nitrates are scarce, forcing specialized plants to capture and digest insects to get the nitrogen they need."
+  },
+  {
+    "id": "W01_BIOL_35",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A botany student measures the water loss from a potted plant under different conditions. She observes that the transpiration rate climbs dramatically when she places a portable fan next to the plant leaves. What causes this change?",
+    "options": ["A) The fan forces carbon dioxide gas deep into the root cells", "B) The moving air sweeps away the humid water vapor layer building up around the leaves, keeping a steep moisture gradient that speeds up evaporation from the stomata", "C) Air currents trigger an endothermic reaction inside the xylem tubes", "D) The wind causes the guard cells to shrink and freeze locked open"],
+    "correct": "B",
+    "hint": "Evaporation happens faster when the air outside the leaf is dry compared to the humid inside. Sweeping away the humid air boundary layer maintains a rapid rate of water loss."
+  },
+  {
+    "id": "W01_LOGIC_31",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "If a secure tracking station encrypts the word 'GALAXY' into the telemetry code format 'HPNDBA', what is the matching encrypted string for the word 'PLANET' under the exact same system rules?",
+    "options": ["A) QNDRFY", "B) QOBPIT", "C) QMCOFU", "D) QNDPGO"],
+    "correct": "A",
+    "hint": "Look closely at how each letter shifts position: G to H (+1), A to P (+15) - wait, check for a repeating rule or try tracking consonants and vowels differently: G(+1)=H, A(+15)=P, L(+2)=N, A(+3)=D, X(+4)=B, Y(+2)=A. Apply the verified shift sequence."
+  },
+  {
+    "id": "W01_LOGIC_32",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Find the next alphanumeric term in the following mathematical series: Z1A, X2D, V6G, T24J, ?",
+    "options": ["A) R120M", "B) S120M", "C) R96L", "D) S48K"],
+    "correct": "A",
+    "hint": "Break the tokens into three separate lines: The first letters move backward skipping one letter ($Z, X, V, T, \\dots$). The middle numbers follow a factorial multiplication rule ($\\times 1, \\times 2, \\times 3, \\times 4, \\dots$). The final letters move forward by skipping two positions ($A, D, G, J, \\dots$)."
+  },
+  {
+    "id": "W01_LOGIC_33",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "A lunar rover drives $8\\text{ km}$ due North, turns left $90^\\circ$ and travels for $6\\text{ km}$. It then executes another $90^\\circ$ left turn and drives $16\\text{ km}$ South. What is the direct straight-line distance from the rover back to its starting base station coordinates?",
+    "options": ["A) $14\\text{ km}$", "B) $10\\text{ km}$", "C) $12\\text{ km}$", "D) $18\\text{ km}$"],
+    "correct": "B",
+    "hint": "Sketch its path on a coordinate grid: the rover ends up $6\\text{ km}$ West and $8\\text{ km}$ South ($16 - 8$) from where it started. Use the Pythagorean theorem to calculate the diagonal line."
+  },
+  {
+    "id": "W01_LOGIC_34",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Examine the operational matrix grid logic and solve for the missing terminal digit: [4, 2 -> 12], [6, 3 -> 27], [8, 4 -> ?].",
+    "options": ["A) 32", "B) 48", "C) 64", "D) 40"],
+    "correct": "B",
+    "hint": "Find a rule that links the two inputs to the output. Try multiplying them together: $4 \\times 2 = 8$, then add the square of the second number: $8 + 2^2 = 12$. Check if this rule: $(x \\cdot y) + y^2$ works for the second set before solving the third."
+  },
+  {
+    "id": "W01_LOGIC_35",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Six student profiles (M, N, O, P, Q, and R) stand in a circle facing inward toward a central screen. M stands exactly between N and Q. P stands exactly between O and R. If N stands immediately to the left of R, who is standing directly opposite to M in the circle alignment?",
+    "options": ["A) O", "B) P", "C) Q", "D) R"],
+    "correct": "B",
+    "hint": "Draw a six-point circle layout. Place the fixed points down systematically based on the clues: arrange N and R, then fill in M, Q, P, and O until all spacing conditions are met perfectly."
+  },
+{
+    "id": "W01_PHYS_36",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A sounding rocket ascends vertically. A digital tracker registers that it travels the first $120\\text{ km}$ at a uniform speed of $3\\text{ km/min}$ and the next $120\\text{ km}$ at a uniform speed of $4\\text{ km/min}$. What is the calculated average speed of the rocket across its total $240\\text{ km}$ path?",
+    "options": ["A) $3.5\\text{ km/min}$", "B) $3.43\\text{ km/min}$", "C) $3.6\\text{ km/min}$", "D) $7.0\\text{ km/min}$"],
+    "correct": "B",
+    "hint": "Remember that average speed is calculated as total distance divided by total time elapsed across both legs of the flight path: $\\text{Total Time} = (120/3) + (120/4)$."
+  },
+  {
+    "id": "W01_PHYS_37",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "An engineer evaluates four structural alloys to choose a thermal shield for a satellite instrumentation rack. Material A conducts $200\\text{ Joules}$ of heat in 10 seconds. Material B conducts $80\\text{ Joules}$ in 2 seconds. Material C conducts $300\\text{ Joules}$ in 30 seconds. Material D conducts $15\\text{ Joules}$ in 5 seconds. Which material is the best thermal insulator?",
+    "options": ["A) Material A", "B) Material B", "C) Material C", "D) Material D"],
+    "correct": "D",
+    "hint": "An effective thermal insulator conducts the fewest Joules of heat energy per second. Calculate the heat conduction rate ($\\text{Joules} / \\text{Seconds}$) for each material."
+  },
+  {
+    "id": "W01_PHYS_38",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "A digital temperature probe is calibrated using a custom scale ($^\\circ\\text{Z}$): the freezing point of water is set at $-20^\\circ\\text{Z}$ and the boiling point is set at $+100^\\circ\\text{Z}$. If the probe reads a chemical solution at exactly $40^\\circ\\text{C}$ on a standard Celsius scale, what integer value will it display on the custom $^\\circ\\text{Z}$ scale?",
+    "options": ["A) $20^\\circ\\text{Z}$", "B) $28^\\circ\\text{Z}$", "C) $38^\\circ\\text{Z}$", "D) $48^\\circ\\text{Z}$"],
+    "correct": "B",
+    "hint": "Map the scales using the proportion formula: $(C - 0)/100 = (Z - (-20))/120$, since the custom scale has a total span of 120 units between fixed points."
+  },
+  {
+    "id": "W01_PHYS_39",
+    "subject": "Physics",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do mountain explorers wear thick multi-layered clothing when ascending high altitudes, even on cloudless, sunny days?",
+    "options": ["A) Atmospheric density decreases with altitude, reducing the air's capacity to trap heat radiated from Earth's surface", "B) Solar rays turn into mass particles that absorb local heat", "C) High-altitude gravity completely stops convection currents", "D) Cloudless skies trigger a chemical reaction that freezes oxygen"],
+    "correct": "A",
+    "hint": "Thinner atmospheric air at high altitudes contains fewer gas molecules to absorb and retain thermal energy, causing low ambient temperatures."
+  },
+  {
+    "id": "W01_PHYS_40",
+    "subject": "Physics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Two solid cubes made of the same iron alloy are exposed to sunlight. Cube A has side lengths of $1\\text{ cm}$, while Cube B has side lengths of $3\\text{ cm}$. Assuming both absorb solar radiation uniformly across their top surface areas, how does the initial rate of temperature rise for Cube A compare to Cube B? ($\\Delta T_A / \\Delta T_B$)",
+    "options": ["A) Cube A warms up three times as fast as Cube B", "B) Cube A warms up nine times as fast as Cube B", "C) Cube A and Cube B warm up at the exact same rate", "D) Cube B warms up three times as fast as Cube A"],
+    "correct": "A",
+    "hint": "Absorbed energy depends on top surface area ($s^2$), while the total mass needing to warm up scales with volume ($s^3$). Therefore, the initial rate of temperature rise is inversely proportional to the side length ($1/s$)."
+  },
+  {
+    "id": "W01_MATH_36",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "An integer sequence pattern follows the rule: $a_1 = -2$, and for every step after, $a_{n+1} = (a_n \\cdot -3) + 2$. Compute the value of the fourth term ($a_4$) in this sequence.",
+    "options": ["A) 8", "B) -22", "C) 68", "D) -202"],
+    "correct": "D",
+    "hint": "Calculate the terms step-by-step: $a_2 = (-2 \\cdot -3) + 2 = 8$. Use this result to compute $a_3$, and then use $a_3$ to find $a_4$."
+  },
+  {
+    "id": "W01_MATH_37",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "Let $m$ be an integer selected from the closed set $[-3, -2, -1, 0, 1, 2, 3]$. What is the probability that the absolute condition parameter $|m - 2| \\le 2$ holds true?",
+    "options": ["A) $3/7$", "B) $4/7$", "C) $5/7$", "D) $2/7$"],
+    "correct": "C",
+    "hint": "Substitute each individual integer from the set into the expression, calculate the absolute value, and count how many values are less than or equal to 2."
+  },
+  {
+    "id": "W01_MATH_38",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "An autonomous probe dives to a coordinate of $-300\\text{ meters}$ below sea level. It executes an ascent vector, climbing up a total of $+210\\text{ meters}$, followed by a diving leg that takes it down another $-120\\text{ meters}$. What is its final vertical position vector relative to sea level?",
+    "options": ["A) $-210\\text{ meters}$", "B) $-390\\text{ meters}$", "C) $-90\\text{ meters}$", "D) $-150\\text{ meters}$"],
+    "correct": "A",
+    "hint": "Set up your integer summation equation systematically: $(-300) + (+210) + (-120)$. Work through the operations in order."
+  },
+  {
+    "id": "W01_MATH_39",
+    "subject": "Mathematics",
+    "tier": "HOTS (Olympiad)",
+    "question": "What is the net product value if you multiply all the odd integer values that satisfy the strict inequality condition $-3 < x < 3$?",
+    "options": ["A) -1", "B) 1", "C) 0", "D) -9"],
+    "correct": "A",
+    "hint": "Isolate the odd integers contained within the open interval: $-1$ and $1$. Multiply these specific numbers together."
+  },
+  {
+    "id": "W01_MATH_40",
+    "subject": "Mathematics",
+    "tier": "CBSE+ (Application)",
+    "question": "A digital thermometer records an evening temperature drop of $2^\\circ\\text{C}$ every hour for 5 consecutive hours, starting from a baseline of $-3^\\circ\\text{C}$. What is the final tracked integer temperature?",
+    "options": ["A) $-13^\\circ\\text{C}$", "B) $-10^\\circ\\text{C}$", "C) $-15^\\circ\\text{C}$", "D) $-7^\\circ\\text{C}$"],
+    "correct": "A",
+    "hint": "Calculate the total downward temperature drop ($2 \\times 5 = 10^\\circ\\text{C}$). Subtract this change from your initial negative starting value of $-3$."
+  },
+  {
+    "id": "W01_CHEM_36",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "An analytical solution of pure Tartaric Acid is mixed with a neutral drop of Phenolphthalein indicator. A student slowly drips a basic solution of Sodium Hydroxide into the beaker until neutralization is complete. What specific visual endpoint confirms that the solution has turned slightly basic?",
+    "options": ["A) The fluid flashes bright blue", "B) The colorless solution shifts to a steady light pink hue", "C) The mixture forms a dense white precipitate", "D) The yellow indicator turns deep orange"],
+    "correct": "B",
+    "hint": "Phenolphthalein remains colorless in acidic and neutral conditions, but turns a distinct pink color the moment the solution becomes even slightly alkaline."
+  },
+  {
+    "id": "W01_CHEM_37",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "A student tests test tubes containing liquid soap, orange juice, and sugar water. If she tests each fluid with a strip of neutral blue litmus paper, which sample will cause the paper to turn bright red?",
+    "options": ["A) Liquid soap", "B) Orange juice", "C) Sugar water", "D) None of the samples"],
+    "correct": "B",
+    "hint": "Acids turn blue litmus paper red, bases turn red litmus blue, and neutral substances cause no color change. Orange juice contains citric acid."
+  },
+  {
+    "id": "W01_CHEM_38",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "Tube 1 contains dilute Hydrochloric Acid and a scrap of Gold metal. Tube 2 contains dilute Hydrochloric Acid and a scrap of Zinc metal. What observations will be recorded after 10 minutes?",
+    "options": ["A) Both tubes show intense gas evolution", "B) Tube 1 shows no reaction, while Tube 2 produces steady bubbles of Hydrogen gas", "C) Tube 1 produces Hydrogen gas, while Tube 2 shows zero reaction", "D) Both metals dissolve silently without producing gas"],
+    "correct": "B",
+    "hint": "Review the reactivity series: Gold is highly unreactive and cannot displace hydrogen from dilute acids, whereas Zinc reacts steadily."
+  },
+  {
+    "id": "W01_CHEM_39",
+    "subject": "Chemistry",
+    "tier": "CBSE+ (Application)",
+    "question": "Why is an antacid tablet containing Magnesium Hydroxide commonly prescribed to patients suffering from stomach distress and hyperacidity?",
+    "options": ["A) It releases complex enzymes to speed up sugar breakdown", "B) Its basic properties neutralize excess stomach Hydrochloric acid to create a neutral salt and water", "C) Hydroxides lower the fluid volume via condensation loops", "D) It lines the tissue walls to block normal absorption pathways"],
+    "correct": "B",
+    "hint": "Stomach hyperacidity is caused by excess $HCl$. Hydroxides act as bases, countering the excess acid via a classic neutralization path."
+  },
+  {
+    "id": "W01_CHEM_40",
+    "subject": "Chemistry",
+    "tier": "HOTS (Olympiad)",
+    "question": "A chemistry student wants to synthesize a sample of Potassium Sulfate salt using a classic neutralization reaction. Which starting acid and base combination must be selected?",
+    "options": ["A) Hydrochloric Acid + Potassium Hydroxide", "B) Sulfuric Acid + Potassium Hydroxide", "C) Nitric Acid + Potassium Hydroxide", "D) Sulfuric Acid + Sodium Hydroxide"],
+    "correct": "B",
+    "hint": "The salt's name gives away its ions: 'Potassium' comes from the base (Potassium Hydroxide) and 'Sulfate' comes from the acid (Sulfuric Acid)."
+  },
+  {
+    "id": "W01_BIOL_36",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A research team places a healthy green plant inside a lightproof chamber supplied with a steady stream of carbon dioxide gas. If the plant is kept in total darkness for 48 hours, what change will be measured in the composition of the chamber's air?",
+    "options": ["A) Oxygen levels will rise through photosynthesis", "B) Carbon Dioxide levels will rise, while Oxygen levels drop due to continuous cellular respiration", "C) The air composition will remain completely unchanged because plants do not respire without light", "D) Nitrogen gas will be synthesized by the leaf cells"],
+    "correct": "B",
+    "hint": "Plants perform cellular respiration continuously, absorbing oxygen and releasing carbon dioxide. Without light, photosynthesis stops completely, so no oxygen is produced to offset respiration."
+  },
+  {
+    "id": "W01_BIOL_37",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "A student looks at a drop of water under a microscope and identifies a single-celled organism that extends temporary, finger-like projections to capture tiny food particles. What are these extensions called, and what organism is this?",
+    "options": ["A) Cilia, Paramecium", "B) Pseudopodia, Amoeba", "C) Flagella, Euglena", "D) Tentacles, Hydra"],
+    "correct": "B",
+    "hint": "These extensions are formed by cytoplasmic movement, allowing the organism to engulf food through phagocytosis."
+  },
+  {
+    "id": "W01_BIOL_38",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "An experiment feeds a plant Carbon Dioxide gas containing a rare carbon isotope ($^{14}\\text{C}$). After several hours of bright light exposure, the plant tissue is processed. In which compound will the radioactive $^{14}\\text{C}$ markers be concentrated?",
+    "options": ["A) Released Oxygen gas molecules ($O_2$)", "B) Synthesized Starch and Carbohydrate molecules", "C) Liquid water molecules within the xylem vessels", "D) Chlorophyll pigment proteins inside the chloroplasts"],
+    "correct": "B",
+    "hint": "During photosynthesis, carbon dioxide gas is fixed into stable organic carbon chains to create glucose, which is then stored as starch arrays."
+  },
+  {
+    "id": "W01_BIOL_39",
+    "subject": "Biology",
+    "tier": "CBSE+ (Application)",
+    "question": "Why do farmers frequently cultivate leguminous crops (like peas or beans) in rotation with grain crops like wheat on the same plot of land?",
+    "options": ["A) Legume roots absorb excess water to prevent soil waterlogging", "B) Legumes host symbiotic Rhizobium bacteria in root nodules that fix atmospheric nitrogen, naturally enriching the soil", "C) Grain crops require basic chemical fluids produced by legume flowers to sprout", "D) Legumes block solar radiation to keep the soil cool for grain roots"],
+    "correct": "B",
+    "hint": "Symbiotic bacteria in leguminous plants convert atmospheric nitrogen gas into usable nitrates, enriching the soil naturally."
+  },
+  {
+    "id": "W01_BIOL_40",
+    "subject": "Biology",
+    "tier": "HOTS (Olympiad)",
+    "question": "A runner completes a strenuous marathon on a hot afternoon. Which option correctly matches the respiration changes occurring in their lungs and muscle tissues during the final sprint?",
+    "options": ["A) Lungs: Exclusively anaerobic; Muscles: Aerobic respiration", "B) Lungs: Increased aerobic gas exchange; Muscles: Concurrent aerobic and anaerobic respiration yielding lactic acid", "C) Lungs: No gas exchange; Muscles: Complete cessation of energy production", "D) Lungs: Carbon Dioxide intake; Muscles: Ethanol fermentation loops"],
+    "correct": "B",
+    "hint": "The lungs scale up breathing to maximize oxygen intake for systemic aerobic respiration, but heavily strained muscles supplement this energy deficit through local anaerobic pathways."
+  },
+  {
+    "id": "W01_LOGIC_36",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Pointing to a photograph, a student notes: 'The man standing on the right is the brother of the daughter of my maternal grandfather's only child.' If the grandfather's only child refers to the student's mother, how is the man related to the student?",
+    "options": ["A) Father", "B) Uncle", "C) Brother", "D) Cousin"],
+    "correct": "C",
+    "hint": "'My maternal grandfather's only child' refers to the student's mother. The 'daughter of my mother' is the student's sister. Her brother is also the student's brother."
+  },
+  {
+    "id": "W01_LOGIC_37",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Analyze the alphanumeric sequence and identify the next missing data token: B3C, D6E, F12G, H24I, ?",
+    "options": ["A) J36K", "B) J48K", "C) I48J", "D) K48L"],
+    "correct": "B",
+    "hint": "The first and last letters move forward by skipping one position ($B \\rightarrow D \\rightarrow F \\rightarrow H \\rightarrow J$). The middle numbers follow a doubling sequence ($3, 6, 12, 24, 48$)."
+  },
+  {
+    "id": "W01_LOGIC_38",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "A directional sensor starts facing Northwest. It executes a $90^\\circ$ clockwise rotation, followed by a $180^\\circ$ counter-clockwise turn, and a final $45^\\circ$ clockwise adjustment. What direction is the sensor facing now?",
+    "options": ["A) West", "B) South", "C) Southwest", "D) Northwest"],
+    "correct": "A",
+    "hint": "Sum the angular movements algebraically: $+90$ (CW) $- 180$ (CCW) $+ 45$ (CW) $= -45^\\circ$ net counter-clockwise rotation from the initial Northwest direction."
+  },
+  {
+    "id": "W01_LOGIC_39",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Examine the operational relationship and solve for the missing value: [3, 5 -> 34], [4, 2 -> 20], [5, 3 -> ?].",
+    "options": ["A) 25", "B) 34", "C) 16", "D) 45"],
+    "correct": "B",
+    "hint": "Square both input values and add them together to find the output: $5^2 + 3^2 = 25 + 9 = 34$."
+  },
+  {
+    "id": "W01_LOGIC_40",
+    "subject": "Logical Reasoning",
+    "tier": "Medium (Olympiad)",
+    "question": "Five students (A, B, C, D, and E) are sitting in a straight row facing North. C sits exactly in the middle of the row. E sits immediately to the right of D. A sits at the far left edge of the row. Who is sitting immediately to the left of C?",
+    "options": ["A) B", "B) D", "C) E", "D) A"],
+    "correct": "A",
+    "hint": "C is at position 3 out of 5 ($A, \\_, C, \\_, \\_$). Since A is at position 1 and E sits immediately to the right of D, D and E must occupy positions 4 and 5, leaving position 2 for B."
+  } 
     {"comment": "Total of 200 objects will be populated here: 40 per subject"}
   ],
   "sunday_exam": [
