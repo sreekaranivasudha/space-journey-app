@@ -482,7 +482,7 @@
     "options": ["A) Circumference : Circle", "B) Spoke : Wheel", "C) Atom : Molecule", "D) Crest : Wave"],
     "correct": "D",
     "hint": "Identify the relationship: A vertex is the definitive peak point of a geometric pyramid. Look for an option that represents the structural peak of a physical phenomenon."
-  }
+  },
   {
     "id": "W01_PHYS_11",
     "subject": "Physics",
